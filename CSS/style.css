@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Most";
+    src: url(/assets/Mostwasted.ttf) format("truetype");
+}
+
 *{
     font-family: 'Poppins', sans-serif;
 }
@@ -5,11 +10,12 @@
 body{
     background-image: url(/assets/Fondo.jpg);
 }
-
+/*Navegacion*/
 .contenedorHeader{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 1.5vh;
 }
 .contenedorLogo{
     display: flex;
@@ -45,4 +51,107 @@ body{
     color: #8003A5;
     cursor: pointer;
     transform: scale(1.1);
+}
+/*Navegacion*/
+/*Sobre Mi*/
+.contenedorSobreMi{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.banner{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+}
+.imagenBanner{
+    opacity: 0.5;
+}
+.contenedorResumen{
+    width: 40%;
+}
+.contenedorResumen h1{
+    font-family: "Most";
+    font-size: 4em;
+    margin-bottom: 5vh;
+    color: #8003A5;
+    animation-name: cambioColor;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.contenedorResumen p{
+    display: inline-block;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    margin-bottom: 5vh;
+    color: #36382E;
+}
+.redes{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.github img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: 0.5s all;
+    margin: 15px;
+}
+.github img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 33px 4px rgba(128,3,165,1);
+}
+.linkedin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linkedin img{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 100%;
+    transition: 0.5s all;
+}
+.linkedin img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 33px 4px rgba(128,3,165,1);
+}
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.curriculum img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 15px;
+    transition: 0.5s all;
+}
+.curriculum img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 40px 4px rgba(128,3,165,1);
+}
+.fotoPerfil img{
+    border-radius: 100%;
+}
+/*Sobre Mi*/
+/*Animaciones*/
+@keyframes cambioColor{
+    0% {color:#8003A5}
+    25% {color: #36382E;}
+    50% {color: #8003A5;}
+    75% {color: #36382E;}
+    100% {color: #8003A5;}
 }
