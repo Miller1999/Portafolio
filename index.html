@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miller Arias</title>
-    <!-- <link rel="stylesheet" href="/CSS/reset.css"-->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <h1>Miller J. Arias </h1>
-        <nav>
-            <ul>
-                <li><a href="#sobreMi">Sobre mi</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-            </ul>
+    <header class="contenedorHeader">
+        <div class="contenedorLogo">
+            <img src="assets/Logo.svg" alt="" class="logo">
+            <h1 class="tituloNav">Miller J. Arias </h1>
+        </div>
+        <nav class="navegacion">
+            <a href="#sobreMi" class="linkNav">Sobre mi</a>
+            <a href="#skills" class="linkNav">Skills</a>
+            <a href="#hobbies" class="linkNav">Hobbies</a>
+            <a href="#formacion" class="linkNav">Formación</a>
+            <a href="#proyectos" class="linkNav">Proyectos</a>
+            <a href="#contacto" class="linkNav">Contacto</a>
         </nav>
     </header>
     <section id="sobreMi" href="sobreMi">
@@ -149,22 +154,23 @@
         <h1>Contacto</h1>
         <form action="">
             <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre">
+            <input id="nombre" type="text" name="Nombre" required pattern="([A-ZÑa-zñáéíóúÁÉÍÓÚ'°]+)" maxlength="50" title="No debe contener mas de 50 caracteres y numeros">
             <br>
             <label for="email">Correo Electronico</label>
-            <input type="email" name="email">
+            <input id="email" type="email" name="email" required title="No es un email valido" >
             <br>
             <label for="Tema"> Tema</label>
-            <input type="text" name="Tema">
+            <input id="tema" type="text" name="Tema" required maxlength="50">
             <br>
             <label for="mensaje">Mensaje</label>
-            <input type="text" name="Mensaje">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required maxlength="300"></textarea>   
             <br>
-            <button>Enviar mensaje</button>
+            <button type="submit" id="enviar">Enviar mensaje</button>
         </form>
     </section>
     <footer>
         <p>Desarrollado por: Miller Javier Arias - 2023</p>
     </footer>
+    <script type="module" src="JS/app.js"></script>
 </body>
 </html>
