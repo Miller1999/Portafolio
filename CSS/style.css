@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Most";
-    src: url(/assets/Mostwasted.ttf) format("truetype");
+    src: url(/assets/Fuentes/Mostwasted.ttf) format("truetype");
 }
 
 *{
@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(/assets/Fondo.jpg);
+    background-image: url(/assets/Header/Fondo.jpg);
 }
 /*Navegacion*/
 .contenedorHeader{
@@ -220,17 +220,20 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 .contenedorHobbies h1{
     font-family: "Most";
     font-size: 3em;
     margin-bottom: 5vh;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorItems{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     width: 70%;
+    margin-top: 50px;
 }
 .itemH{
     display: flex;
@@ -257,78 +260,145 @@ body{
     opacity: 0;
 }
 #leer:hover{
-    background-image: url(/assets/leeranimado.gif);
+    background-image: url(/assets/Hobbies/leeranimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #escuchar:hover{
-    background-image: url(/assets/musicanimado.gif);
+    background-image: url(/assets/Hobbies/musicanimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #dibujar:hover{
-    background-image: url(/assets/drawanimado.gif);
+    background-image: url(/assets/Hobbies/drawanimado.gif);
     background-size: cover;
     background-position: -125px;
     transition:  1s ease-in-out;
 }
 #programar:hover{
-    background-image: url(/assets/codeanimado.gif);
+    background-image: url(/assets/Hobbies/codeanimado.gif);
     background-size: cover;
     background-position: -15px;
     transition:  1s ease-in-out;
 }
 #bicicleta:hover{
-    background-image: url(/assets/bikeanimado.gif);
+    background-image: url(/assets/Hobbies/bikeanimado.gif);
     background-size: cover;
     background-position: -80px;
     transition:  1s ease-in-out;
 }
 #viajar:hover{
-    background-image: url(/assets/travelanimado.gif);
+    background-image: url(/assets/Hobbies/travelanimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #jugar:hover{
-    background-image: url(/assets/gamesanimado.gif);
+    background-image: url(/assets/Hobbies/gamesanimado.gif);
     background-size: cover;
     background-position: -100px;
     transition:  1s ease-in-out;
 }
 #bailar:hover{
-    background-image: url(/assets/danceanimado.gif);
+    background-image: url(/assets/Hobbies/danceanimado.gif);
     background-size: cover;
     background-position: -100px;
     transition:  1s ease-in-out;
 }
 #caminar:hover{
-    background-image: url(/assets/walkanimado.gif);
+    background-image: url(/assets/Hobbies/walkanimado.gif);
     background-size: cover;
     background-position: -50px;
     transition:  1s ease-in-out;
 }
 #aprender:hover{
-    background-image: url(/assets/learnanimado.gif);
+    background-image: url(/assets/Hobbies/learnanimado.gif);
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #gimnasio:hover{
-    background-image: url(/assets/gymanimado.gif);
+    background-image: url(/assets/Hobbies/gymanimado.gif);
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #nadar:hover{
-    background-image: url(/assets/swimanimado.gif);
+    background-image: url(/assets/Hobbies/swimanimado.gif);
     background-size: cover;
     background-position: -200px;
     transition:  1s ease-in-out;
 }
 /*Hobbies*/
+/*Formacion*/
+.contenedorFormacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorFormacion h1{
+    font-family: "Most";
+    font-size: 3em;
+    margin-bottom: 5vh;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
+}
+.contenedorItemsF{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 70%;
+    margin-top: 25px;
+    justify-content: center;
+}
+.itemF{
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+.itemF div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    border-radius: 50px;
+}
+.itemF img{
+    width: 250px;
+}
+.itemF .front{
+    transform: perspective(500px) rotateY(0deg);
+    background-color: rgba(128,3,165,0.2);
+}
+.itemF .back{
+    flex-direction: column;
+    transform: perspective(500px) rotateY(180deg);
+    background-color: rgba(54, 56, 46, 0.8);
+    color: #E5E5E5;
+}
+.itemF:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.itemF:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.back h6{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: "Poppins";
+    margin-bottom: 25px;
+}
+.back p{
+    font-size: medium;
+    font-family: "Poppins";
+    margin-bottom: 25px;
+}
+/*Formacion*/
 /*Animaciones*/
 @keyframes cambioColor{
     0% {color:#8003A5}
