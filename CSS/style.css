@@ -9,6 +9,7 @@
 
 body{
     background-image: url(/assets/Header/Fondo.jpg);
+    overflow-x: hidden;
 }
 /*Navegacion*/
 .contenedorHeader{
@@ -399,6 +400,85 @@ body{
     margin-bottom: 25px;
 }
 /*Formacion*/
+/*Proyectos*/
+.contenedorProyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorProyectos h1{
+    font-family: "Most";
+    font-size: 3em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
+}
+.contenedorCadaProyecto{
+    display: flex;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.imagenProyecto{
+    margin: 50px;
+}
+.imagenProyecto img{
+    width: 800px;
+    border-radius: 25px;
+    box-shadow: 20px 20px 10px 1px rgba(0,0,0,0.75);
+    transition: all .5s ease-in-out;
+}
+.imagenProyecto img:hover{
+    transform: scale(1.01);
+    box-shadow: 20px 20px 20px 1px rgba(0,0,0,0.75);
+}
+.contenidoProyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contenidoProyecto h2{
+    font-family: "Most";
+    font-size: 4em;
+}
+.contenidoProyecto h4{
+    font-family: "Poppins";
+    font-size: 2em;
+}
+.contenidoProyecto p{
+    font-family: "Poppins";
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: justify;
+}
+.infoProyecto{
+    display: flex;
+    gap: 30px;
+}
+.infoProyecto a{
+    text-decoration: none;
+    color: #36382E;
+}
+.infoProyecto button{
+    padding: 15px;
+    background-color: rgba(128,3,165,0.2);
+    border-radius: 20px;
+    border: none;
+    color: #36382E;
+    font-size: 35px;
+    transition: all 1s ease-in-out;
+}
+.infoProyecto button:hover{
+    background-color: rgba(54, 56, 46, 0.3);
+    color: #8003A5;
+    transform: scale(1.2);
+}
+.infoProyecto a:hover{
+    color: #8003A5;
+}
+/*Proyectos*/
 /*Animaciones*/
 @keyframes cambioColor{
     0% {color:#8003A5}
