@@ -1,15 +1,28 @@
-const hardSkills = document.querySelector(".hardskills")
+const carrusel = document.querySelector(".Skills")
 
+let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
 let intervalo = null;
+let step = 1
 
 const start = () => {
     intervalo = setInterval(function(){
-        hardSkills.scrollLeft = hardSkills.scrollLeft + 1; 
+        carrusel.scrollLeft = carrusel.scrollLeft + step; 
+        if(carrusel.scrollLeft == maxScrollLeft)
+            step *= -1;
+        else if(carrusel.scrollLeft == 0)
+            step *= -1;
     },10)
 }
 
 const stop = () => {
-
+    clearInterval(intervalo)
 }
+
+carrusel.addEventListener('mouseover', ()=>{
+    stop();
+})
+carrusel.addEventListener('mouseout', ()=>{
+    start();
+})
 
 start();

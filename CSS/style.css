@@ -4,7 +4,7 @@
 }
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 body{
@@ -30,12 +30,12 @@ body{
 
 .navegacion{
     display: flex;
-    font-family: 'Poppins';
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
 }
 
 .tituloNav{ 
-    font-family: 'Poppins';
+    font-family: 'Roboto Slab', serif;
     font-size: 2em;
     color: #36382E;
 
@@ -71,7 +71,7 @@ body{
     top: 0;
 }
 .imagenBanner{
-    opacity: 0.5;
+    opacity: 0.1;
 }
 .contenedorResumen{
     width: 40%;
@@ -85,7 +85,7 @@ body{
 }
 .contenedorResumen p{
     display: inline-block;
-    font-family: 'Poppins';
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     margin-bottom: 5vh;
     color: #36382E;
@@ -102,6 +102,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 1s ease;
 }
 .github img{
     width: 50px;
@@ -113,6 +114,11 @@ body{
 .github img:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 33px 4px rgba(128,3,165,1);
+}
+.github:hover p{
+    transform: scale(1.1);
+    color: #8003A5;
+    transition: all 1s ease;
 }
 .linkedin{
     display: flex;
@@ -130,6 +136,11 @@ body{
     transform: scale(1.1);
     box-shadow: 0px 0px 33px 4px rgba(128,3,165,1);
 }
+.linkedin:hover p{
+    transform: scale(1.1);
+    color: #8003A5;
+    transition: all 1s ease;
+}
 .curriculum{
     display: flex;
     flex-direction: column;
@@ -145,6 +156,11 @@ body{
 .curriculum img:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 40px 4px rgba(128,3,165,1);
+}
+.curriculum:hover p{
+    transform: scale(1.1);
+    color: #8003A5;
+    transition: all 1s ease;
 }
 .fotoPerfil img{
     border-radius: 100%;
@@ -164,7 +180,7 @@ body{
     animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorBiografia p{
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     width: 80%;
     line-height: 2em;
@@ -191,22 +207,34 @@ body{
 }
 .Skills{
     display: flex;
-    justify-content: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 50px;
+    gap: 50px;
 }
 .item{
     display: flex;
     flex-direction: column;
     width: 250px;
     align-items: center;
-    border: solid 2px black;
     text-align: center;
     justify-content: center;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
+    transition: all 1s ease;
 }
 .item img{
     margin: 10px;
     width: 200px;
+}
+.item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.item:hover p{
+    transform: scale(1.3);
+    transform: translateY(20px);
+    color: #8003A5;
+    transition: all 1s ease;
 }
 /*skills*/
 /*Hobbies*/
@@ -236,20 +264,26 @@ body{
     width: 200px;
     margin: 0px 30px 30px 30px;
     align-items: center;
-    box-shadow: 0px 0px 40px 4px rgba(128,3,165,1);
     text-align: center;
     justify-content: center;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     border-radius: 20px;
+    font-size: 20px;
+    transition: all 1s ease;
 }
 .itemH img{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px;
-    
 }
 .itemH:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.itemH:hover p{
     color: #8003A5;
+    transform: translateY(25px);
+    transition: 1s all ease;
 }
 .itemH img:hover{
     opacity: 0;
@@ -378,6 +412,7 @@ body{
 }
 .itemF:hover .front{
     transform: perspective(500px) rotateY(180deg);
+    cursor: pointer;
 }
 .itemF:hover .back{
     transform: perspective(500px) rotateY(360deg);
@@ -385,12 +420,12 @@ body{
 .back h6{
     font-size: larger;
     font-weight: bolder;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 25px;
 }
 .back p{
     font-size: medium;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 25px;
 }
 /*Formacion*/
@@ -399,6 +434,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2vh;
 }
 .contenedorProyectos h1{
     font-family: "Most";
@@ -439,11 +475,11 @@ body{
     animation: cambioColor 8s infinite;
 }
 .contenidoProyecto h4{
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     font-size: 2em;
 }
 .contenidoProyecto p{
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     line-height: 2em;
     text-align: justify;
@@ -485,7 +521,7 @@ body{
 }
 .contenedorContacto h1{
     font-family: "Most";
-    font-size: 3em;
+    font-size: 4em;
     margin-top: 5vh;
     margin-bottom: 5vh;
     animation: cambioTamaño infinite 0.8s ease-in-out;
@@ -500,13 +536,13 @@ body{
 .contenedorItemC label{
     margin-bottom: 10px;
     font-size: larger;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     color: #36382E;
 }
 .contenedorItemC input{
     width: 500px;
     height: 25px;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     border-radius: 10px;
     border: 0;
 }
@@ -542,7 +578,7 @@ body{
     height: 50px;
     background-color: #36382E;
     color: #E5E5E5;
-    font-family: "Poppins";
+    font-family: 'Roboto Slab', serif;
     font-size: 20px;
     align-items: center;
     justify-content: center;
@@ -581,10 +617,20 @@ body{
 .boton:hover{
     background-color: #8003A5;
 }
-
-
-
 /*Contacto*/
+/*Footer*/
+.contenedorFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorFooter p{
+    margin: 50px;
+    font-size: 3em;
+    font-family: "Most";
+    animation: cambioColor 10s ease infinite;
+}
+/*Footer*/
 /*Animaciones*/
 @keyframes cambioColor{
     0% {color:#8003A5}
