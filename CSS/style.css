@@ -81,9 +81,7 @@ body{
     font-size: 4em;
     margin-bottom: 5vh;
     color: #8003A5;
-    animation-name: cambioColor;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+    animation: cambioColor 5s infinite;
 }
 .contenedorResumen p{
     display: inline-block;
@@ -163,9 +161,7 @@ body{
     font-family: "Most";
     font-size: 3em;
     margin-bottom: 5vh;
-    animation-name: cambioColor;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorBiografia p{
     font-family: "Poppins";
@@ -186,9 +182,7 @@ body{
     font-family: "Most";
     font-size: 3em;
     margin-bottom: 5vh;
-    animation-name: cambioColor;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorDivs{
     display: flex;
@@ -442,6 +436,7 @@ body{
 .contenidoProyecto h2{
     font-family: "Most";
     font-size: 4em;
+    animation: cambioColor 8s infinite;
 }
 .contenidoProyecto h4{
     font-family: "Poppins";
@@ -452,6 +447,7 @@ body{
     font-size: 1.5em;
     line-height: 2em;
     text-align: justify;
+    margin-bottom: 10px;
 }
 .infoProyecto{
     display: flex;
@@ -473,22 +469,134 @@ body{
 .infoProyecto button:hover{
     background-color: rgba(54, 56, 46, 0.3);
     color: #8003A5;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .infoProyecto a:hover{
     color: #8003A5;
 }
 /*Proyectos*/
+/*Contacto*/
+.contenedorContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contenedorContacto h1{
+    font-family: "Most";
+    font-size: 3em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    animation: cambioTamaño infinite 0.8s ease-in-out;
+}
+.contenedorItemC{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.contenedorItemC label{
+    margin-bottom: 10px;
+    font-size: larger;
+    font-family: "Poppins";
+    color: #36382E;
+}
+.contenedorItemC input{
+    width: 500px;
+    height: 25px;
+    font-family: "Poppins";
+    border-radius: 10px;
+    border: 0;
+}
+.contenedorItemC input:focus{
+    border: 0;
+    outline: none;
+}
+.contenedorItemC textarea{
+    border-radius: 10px;
+}
+.labelN{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all 0.5s;
+}
+#nombre::placeholder, #correo::placeholder, #tema::placeholder, #mensaje::placeholder{ 
+    visibility: hidden;
+}
+#nombre:not(:placeholder-shown) + .labelN, #nombre:focus + .labelN,#correo:not(:placeholder-shown) + .labelN, #correo:focus + .labelN,#tema:not(:placeholder-shown) + .labelN, #tema:focus + .labelN, #mensaje:not(:placeholder-shown) + .labelN, #mensaje:focus + .labelN{
+    top: -13px;
+    transition: all 0.5s;
+    color: #8003A5;
+}
+.contenedor-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    display: inline-flex;
+    width: 400px;
+    height: 50px;
+    background-color: #36382E;
+    color: #E5E5E5;
+    font-family: "Poppins";
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+}.boton span{
+    transition: .4s all ease-in-out;
+    position: absolute;
+    left: 30%;
+}
+.boton .flecha{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.flecha svg{
+    color: #E5E5E5;
+    width: 25px;
+    height: 25px;
+}
+.boton:hover .flecha{
+    left: calc(100% - 50px);
+    opacity: 1;
+}
+.boton:hover span{
+    left: 20px;
+}
+.boton:hover{
+    background-color: #8003A5;
+}
+
+
+
+/*Contacto*/
 /*Animaciones*/
 @keyframes cambioColor{
     0% {color:#8003A5}
-    25% {color: #36382E;}
-    50% {color: #8003A5;}
-    75% {color: #36382E;}
+    20% {color: #36382E;}
+    40% {color: #8003A5;}
+    60% {color: #36382E;}
+    80% {color: #8003A5;}
+    90% {color: #36382E;}
     100% {color: #8003A5;}
 }
 @keyframes cambioTamaño {
     0% {transform: scale(1); color: #36382E;}
-    50% {transform: scale(1.2); color:#8003A5;}
+    50% {transform: scale(1.1); color:#8003A5;}
     100% {transform: scale(1); color: #36382E;}
 }

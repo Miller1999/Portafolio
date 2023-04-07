@@ -305,78 +305,78 @@
         </div>
         <div class="contenedorCadaProyecto">
             <div class="contenidoProyecto">
-                <h2>Takepon</h2>
-                <h4></h4>
-                <p></p>
-                <div class="infoProyecto">
-                    <button><a href="https://github.com/Miller1999/Encripto" target="_blank" >Repositorio</a></button>
-                    <button><a href="https://miller1999.github.io/Encripto/" target="_blank" >Enkripto</a></button>
-                </div>
-            </div> 
-            <div class="imagenProyecto">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="contenedorCadaProyecto">
-            <div class="imagenProyecto">
-                <img src="" alt="">
-            </div>
-            <div class="contenidoProyecto">
                 <h2>Calculadora</h2>
-                <h4></h4>
-                <p></p>
+                <h4>Calculadora funcional con las operaciones basicas</h4>
+                <p>Desarrollado durante el aprendizaje en Launch X, esta calculadora hecha en HTML, CSS y JS cuenta con las operaciones basicas de la matematica, como: suma, resta, multiplicacion, division, potencia, raiz cuadrada y residuo representado con el simbolo de porcentaje</p>
                 <div class="infoProyecto">
-                    <button><a href="https://github.com/Miller1999/Encripto" target="_blank" >Repositorio</a></button>
-                    <button><a href="https://miller1999.github.io/Encripto/" target="_blank" >Enkripto</a></button>
+                    <button><a href="https://github.com/Miller1999/CalculadoraPanadera" target="_blank" >Repositorio</a></button>
+                    <button><a href="https://calculadorapanadera.azurewebsites.net/" target="_blank" >Calculadora Panadera</a></button>
                 </div>
-            </div> 
+            </div>
+            <div class="imagenProyecto">
+                <img src="assets/Proyectos/calculadora.png" alt="">
+            </div>
         </div>
         <div class="contenedorCadaProyecto">
+            <div class="imagenProyecto">
+                <img src="assets/Proyectos/pokedex.png" alt="">
+            </div>
             <div class="contenidoProyecto">
                 <h2>Pokedex</h2>
-                <h4></h4>
-                <p></p>
+                <h4>Pokedex con todos los pokemones existentes</h4>
+                <p>Ultimo proyecto desarrollado en Launch X, se conecta a una api y se obtienen los datos de los pokemones, en este caso se accede a la imagen, a su numero, su nombre y habilidades naturales del pokemon. Desarrollado en HTML, CSS y JS</p>
                 <div class="infoProyecto">
-                    <button><a href="https://github.com/Miller1999/Encripto" target="_blank" >Repositorio</a></button>
-                    <button><a href="https://miller1999.github.io/Encripto/" target="_blank" >Enkripto</a></button>
+                    <button><a href="https://github.com/Miller1999/POKEDEX" target="_blank" >Repositorio</a></button>
+                    <button><a href="https://miller1999.github.io/POKEDEX/index1.html" target="_blank" >Pokedex</a></button>
                 </div>
             </div> 
-            <div class="imagenProyecto">
-                <img src="" alt="">
-            </div>
         </div>
         <div class="contenedorCadaProyecto">
-            <div class="imagenProyecto">
-                <img src="" alt="">
-            </div>
             <div class="contenidoProyecto">
                 <h2>Delicream</h2>
-                <h4></h4>
-                <p></p>
+                <h4>Primer pagina con CSS</h4>
+                <p>Primera pagina web donde se incluye CSS, todo es representativo. Primera tarea hecha en Launch X</p>
                 <div class="infoProyecto">
-                    <button><a href="https://github.com/Miller1999/Encripto" target="_blank" >Repositorio</a></button>
-                    <button><a href="https://miller1999.github.io/Encripto/" target="_blank" >Enkripto</a></button>
+                    <button><a href="https://github.com/Miller1999/Delicream" target="_blank" >Repositorio</a></button>
+                    <button><a href="https://miller1999.github.io/Delicream/indexCliente.html" target="_blank" >Delicream</a></button>
                 </div>
-            </div>           
+            </div>     
+            <div class="imagenProyecto">
+                <img src="assets/Proyectos/Delicream.png" alt="">
+            </div>      
         </div>
     </section>
     <!--Editar formulario-->
-    <section id="contacto" href="contacto">
+    <section id="contacto" href="contacto" class="contenedorContacto">
         <h1>Contacto</h1>
         <form action="">
-            <label for="Nombre">Nombre</label>
-            <input id="nombre" type="text" name="Nombre" required pattern="([A-ZÑa-zñáéíóúÁÉÍÓÚ'°]+)" maxlength="50" title="No debe contener mas de 50 caracteres y numeros">
-            <br>
-            <label for="email">Correo Electronico</label>
-            <input id="email" type="email" name="email" required title="No es un email valido" >
-            <br>
-            <label for="Tema"> Tema</label>
-            <input id="tema" type="text" name="Tema" required maxlength="50">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required maxlength="300"></textarea>   
-            <br>
-            <button type="submit" id="enviar">Enviar mensaje</button>
+            <div class="contenedorItemC">
+                <input id="nombre" type="text" name="Nombre" required pattern="([A-ZÑa-zñáéíóúÁÉÍÓÚ'°]+)" maxlength="50" title="No debe contener mas de 50 caracteres y numeros" placeholder="Nombre">
+                <label for="Nombre" class="labelN">Nombre</label>
+            </div> 
+            <div class="contenedorItemC">
+                <input id="correo" type="email" name="email" required title="No es un email valido" placeholder="Correo">
+                <label for="correo" class="labelN">Correo Electronico</label>
+            </div>
+            <div class="contenedorItemC">
+                <input id="tema" type="text" name="Tema" required maxlength="50" placeholder="Asunto">
+                <label for="Tema" class="labelN"> Tema</label>
+            </div>
+            <div class="contenedorItemC">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required maxlength="300" placeholder="Mensaje"></textarea>
+                <label for="mensaje" class="labelN">Mensaje</label> 
+            </div>
+            <div class="contenedor-boton">
+                <button type="submit" id="enviar" class="boton">
+                    <div class="flecha">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </div>
+                    <span>Enviar mensaje</span> 
+                </button>
+            </div>
+            
         </form>
     </section>
     <footer>
@@ -385,4 +385,5 @@
     <!--<script src="JS/animacion.js"></script>
     <script type="module" src="JS/app.js"></script>-->
 </body>
+
 </html>
