@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Most";
-    src: url(/assets/Fuentes/Mostwasted.ttf) format("truetype");
+    src: url(Mostwasted.ttf) format("truetype");
 }
 
 *{
@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url(/assets/Header/Fondo.jpg);
+    background-image: url(Fondo.jpg);
     overflow-x: hidden;
 }
 /*Navegacion*/
@@ -289,73 +289,73 @@ body{
     opacity: 0;
 }
 #leer:hover{
-    background-image: url(/assets/Hobbies/leeranimado.gif);
+    background-image: url(leeranimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #escuchar:hover{
-    background-image: url(/assets/Hobbies/musicanimado.gif);
+    background-image: url(musicanimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #dibujar:hover{
-    background-image: url(/assets/Hobbies/drawanimado.gif);
+    background-image: url(drawanimado.gif);
     background-size: cover;
     background-position: -125px;
     transition:  1s ease-in-out;
 }
 #programar:hover{
-    background-image: url(/assets/Hobbies/codeanimado.gif);
+    background-image: url(codeanimado.gif);
     background-size: cover;
     background-position: -15px;
     transition:  1s ease-in-out;
 }
 #bicicleta:hover{
-    background-image: url(/assets/Hobbies/bikeanimado.gif);
+    background-image: url(bikeanimado.gif);
     background-size: cover;
     background-position: -80px;
     transition:  1s ease-in-out;
 }
 #viajar:hover{
-    background-image: url(/assets/Hobbies/travelanimado.gif);
+    background-image: url(travelanimado.gif);
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #jugar:hover{
-    background-image: url(/assets/Hobbies/gamesanimado.gif);
+    background-image: url(gamesanimado.gif);
     background-size: cover;
     background-position: -100px;
     transition:  1s ease-in-out;
 }
 #bailar:hover{
-    background-image: url(/assets/Hobbies/danceanimado.gif);
+    background-image: url(danceanimado.gif);
     background-size: cover;
     background-position: -100px;
     transition:  1s ease-in-out;
 }
 #caminar:hover{
-    background-image: url(/assets/Hobbies/walkanimado.gif);
+    background-image: url(walkanimado.gif);
     background-size: cover;
     background-position: -50px;
     transition:  1s ease-in-out;
 }
 #aprender:hover{
-    background-image: url(/assets/Hobbies/learnanimado.gif);
+    background-image: url(learnanimado.gif);
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #gimnasio:hover{
-    background-image: url(/assets/Hobbies/gymanimado.gif);
+    background-image: url(gymanimado.gif);
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #nadar:hover{
-    background-image: url(/assets/Hobbies/swimanimado.gif);
+    background-image: url(swimanimado.gif);
     background-size: cover;
     background-position: -200px;
     transition:  1s ease-in-out;
