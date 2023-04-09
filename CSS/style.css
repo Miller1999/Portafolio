@@ -547,7 +547,7 @@ body{
     border: 0;
 }
 .contenedorItemC input:focus{
-    border: 0;
+    border: 1px #8003A5 solid;
     outline: none;
 }
 .contenedorItemC textarea{
@@ -569,6 +569,7 @@ body{
 }
 .contenedor-boton{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -588,6 +589,7 @@ body{
     cursor: pointer;
     transition: all 0.4s ease;
     position: relative;
+    margin: 10px 0px;
 }.boton span{
     transition: .4s all ease-in-out;
     position: absolute;
@@ -616,6 +618,47 @@ body{
 }
 .boton:hover{
     background-color: #8003A5;
+}
+.formulario-input-error{
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: #bb2929;
+    margin-top: 10px;
+    display: none;
+}
+.formulario-input-error-activo{
+    display: block;
+}
+.formulario-mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 10px;
+    display: none;
+}
+.formulario-mensaje-activo{
+    display: block;
+}
+.formulario-mensaje-enviado{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.formulario-mensaje-enviado-activado{
+    display: block;
+}
+.formulario-incorrecto input{
+    border: solid 2px #bb2929
+}
+.formulario-incorrecto label{
+    color: #bb2929;
+}
+.formulario-correcto input{
+    border: solid 2px #119200;
+}
+.formulario-correcto textarea{
+    border: solid 2px #119200;
 }
 /*Contacto*/
 /*Footer*/

@@ -349,22 +349,32 @@
     <!--Editar formulario-->
     <section id="contacto" href="contacto" class="contenedorContacto">
         <h1>Contacto</h1>
-        <form action="">
-            <div class="contenedorItemC">
-                <input id="nombre" type="text" name="Nombre" required pattern="([A-ZÑa-zñáéíóúÁÉÍÓÚ'°]+)" maxlength="50" title="No debe contener mas de 50 caracteres y numeros" placeholder="Nombre">
+        <form action="https://formsubmit.co/millerjavierarias@gmail.com" method="POST" id="formulario">
+            <div class="contenedorItemC" id="formulario-nombre">
+                <input id="nombre" type="text" name="name" required placeholder="Nombre" >
                 <label for="Nombre" class="labelN">Nombre</label>
+                <p class="formulario-input-error">El nombre no puede llevar numeros ni simbolos y no puede estar vacio</p>
             </div> 
-            <div class="contenedorItemC">
-                <input id="correo" type="email" name="email" required title="No es un email valido" placeholder="Correo">
+            <div class="contenedorItemC" id="formulario-email">
+                <input id="correo" type="email" name="email" required  placeholder="Correo">
                 <label for="correo" class="labelN">Correo Electronico</label>
+                <El class="formulario-input-error">El correo debe llevar @ y dominio y no puede estar vacio</p>
             </div>
-            <div class="contenedorItemC">
-                <input id="tema" type="text" name="Tema" required maxlength="50" placeholder="Asunto">
-                <label for="Tema" class="labelN"> Tema</label>
+            <div class="contenedorItemC" id="formulario-asunto">
+                <input id="tema" type="text" name="subject" required  placeholder="Asunto">
+                <label for="subject" class="labelN"> Tema</label>
+                <No class="formulario-input-error">No puede ser mayor a 50 caracteres y no puede estar vacio</p>
             </div>
-            <div class="contenedorItemC">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required maxlength="300" placeholder="Mensaje"></textarea>
+            <div class="contenedorItemC" id="formulario-mensaje">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required  placeholder="Mensaje"></textarea>
                 <label for="mensaje" class="labelN">Mensaje</label> 
+                <No class="formulario-input-error">No puede ser mayor a 300 caracteres y no puede estar vacio</p>
+            </div>
+            <div class="formulario-mensaje">
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                <b>Error: </b>Diligencie el formulario correctamente</p>
             </div>
             <div class="contenedor-boton">
                 <button type="submit" id="enviar" class="boton">
@@ -375,6 +385,7 @@
                     </div>
                     <span>Enviar mensaje</span> 
                 </button>
+                <p class="formulario-mensaje-enviado" id="formulario-mensaje-enviado">Formulario enviado exitosamente</p>
             </div>
             
         </form>
@@ -383,7 +394,7 @@
         <p>Desarrollado por: Miller Javier Arias - 2023</p>
     </footer>
     <script src="JS/animacion.js"></script>
-    <!--<script type="module" src="JS/app.js"></script>-->
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
