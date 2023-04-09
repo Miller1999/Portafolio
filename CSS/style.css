@@ -654,6 +654,9 @@ body{
 .formulario-incorrecto label{
     color: #bb2929;
 }
+.formulario-incorrecto textarea{
+    border: solid 2px #bb2929
+}
 .formulario-correcto input{
     border: solid 2px #119200;
 }
