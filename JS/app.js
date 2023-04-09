@@ -2,10 +2,6 @@ const formulario = document.getElementById("formulario")
 const inputs = document.querySelectorAll("#formulario input")
 const textarea = document.querySelectorAll("#formulario textarea")
 
-
-console.log(inputs)
-console.log(textarea)
-
 const expresiones = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,50}$/,
     correo: /^[a-zA-ZÀ-ÿ0-9_.+-]+@[a-z-]+\.[a-zA-Z0-9-.]+$/,
