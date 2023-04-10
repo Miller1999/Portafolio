@@ -701,7 +701,7 @@ body{
 }
 /*Animaciones*/
 /*Responsividad*/
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 425px){
 /*Navegacion*/
 .contenedorHeader{
     flex-direction: column;
@@ -724,8 +724,7 @@ body{
     font-size: 2.5em;
 }
 .banner img{
-    width: 375px;
-    height: 250px;
+opacity: 0;
 }
 .contenedorResumen p{
     font-size: 1.2em;
