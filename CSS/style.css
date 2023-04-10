@@ -451,7 +451,6 @@ body{
 }
 .contenedorCadaProyecto{
     display: flex;
-    flex-wrap: wrap;
     width: 80%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -724,7 +723,7 @@ body{
     font-size: 2.5em;
 }
 .banner img{
-opacity: 0;
+    display: none;
 }
 .contenedorResumen p{
     font-size: 1.2em;
@@ -837,6 +836,7 @@ opacity: 0;
     margin-bottom: 1vh;
 }
 .contenedorCadaProyecto{
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 .imagenProyecto{
@@ -889,6 +889,120 @@ opacity: 0;
 .contenedorFooter p{
     margin: 10px;
     font-size: 1em;
+}
+/*Footer*/
+}
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    /*Navegacion*/
+.contenedorHeader{
+    flex-wrap: nowrap;
+    margin-top: 1vh;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.navegacion{
+    flex-wrap: nowrap;
+    font-size: 1em;
+}
+
+.tituloNav{ 
+    font-size: 1em;
+}
+.linkNav{
+    padding: 10px;
+}
+/*Navegacion*/
+/*Sobre Mi*/
+.contenedorSobreMi{
+    flex-wrap: nowrap;
+    gap:50px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.banner{
+    display: none;
+}
+.contenedorResumen{
+    width: 40%;
+}
+.contenedorResumen h1{
+    font-size: 2em;
+    margin-bottom: 5vh;
+}
+.contenedorResumen p{
+    font-size: 1em;
+}
+.redes{
+    gap: 20px;
+}
+.fotoPerfil img{
+    border-radius: 100%;
+    width: 200px;
+}
+/*Sobre Mi*/
+/*Biografia*/
+.contenedorBiografia h1{
+    font-size: 2.5em;
+}
+.contenedorBiografia p{
+    font-size: 1.2em;
+}
+/*Biografia*/
+/*Skills*/
+/*Skills*/
+/*Hobbies*/
+.contenedorHobbies{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contenedorHobbies h1{
+    font-size: 2.5em;
+}
+.contenedorItems{
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+}
+/*Hobbies*/
+/*Formacion*/
+.contenedorItemsF{
+    width: 90%;
+}
+/*Formacion*/
+/*Proyectos*/
+.contenedorCadaProyecto{
+    flex-wrap: wrap;
+}
+.imagenProyecto{
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+.imagenProyecto img{
+    width: 500px;
+}
+.contenidoProyecto h2{
+    font-size: 3em;
+}
+.contenidoProyecto h4{
+    font-size: 1.7em;
+}
+.contenidoProyecto p{
+    font-size: 1.2em;
+}
+.infoProyecto button{
+    font-size: 25px;
+}
+/*Proyectos*/
+/*Contacto*/
+/*Contacto*/
+/*Footer*/
+.contenedorFooter p{
+    font-size: 2em;
 }
 /*Footer*/
 }
