@@ -10,11 +10,13 @@
 body{
     background-image: url(Fondo.jpg);
     overflow-x: hidden;
+    width: 100%;
 }
 /*Navegacion*/
 .contenedorHeader{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1.5vh;
 }
@@ -30,6 +32,7 @@ body{
 
 .navegacion{
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
 }
@@ -60,6 +63,7 @@ body{
 .contenedorSobreMi{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap:150px;
     align-items: center;
     margin-top: 10vh;
@@ -366,6 +370,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .contenedorFormacion h1{
     font-family: "Most";
@@ -432,6 +437,7 @@ body{
 /*Proyectos*/
 .contenedorProyectos{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
@@ -445,6 +451,7 @@ body{
 }
 .contenedorCadaProyecto{
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -691,4 +698,198 @@ body{
     0% {transform: scale(1); color: #36382E;}
     50% {transform: scale(1.1); color:#8003A5;}
     100% {transform: scale(1); color: #36382E;}
+}
+/*Animaciones*/
+/*Responsividad*/
+@media only screen and (max-width: 375px){
+/*Navegacion*/
+.contenedorHeader{
+    flex-direction: column;
+}
+.navegacion{
+    justify-content: center;
+}
+/*Navegacion*/
+/*Sobre Mi*/
+.contenedorSobreMi{
+    gap:20px;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+.contenedorResumen{
+    width: 90%;
+}
+.contenedorResumen h1{
+    font-size: 2.5em;
+}
+.banner img{
+    width: 375px;
+    height: 250px;
+}
+.contenedorResumen p{
+    font-size: 1.2em;
+}
+.redes{
+    gap: 20px;
+}
+.fotoPerfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fotoPerfil img{
+    width: 80%;
+}
+/*Sobre Mi*/
+/*Biografia*/
+
+.contenedorBiografia h1{
+    font-size: 2.5em;
+}
+.contenedorBiografia p{
+    font-size: 1em;
+    width: 100%;
+}
+/*Biografia*/
+/*skills*/
+.tituloskills{
+    font-size: 2.5em;
+    margin-bottom: 1vh;
+}
+.contenedorDivs{
+    width: 90%;
+}
+
+.item{
+    width: 150px;
+}
+.item img{
+    width: 75px;
+}
+/*skills*/
+/*Hobbies*/
+.contenedorHobbies{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.contenedorHobbies h1{
+    font-size: 2.5em;
+}
+.contenedorItems{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin-top: 10px;
+}
+.itemH{
+    width: 100px;
+    margin: 0px 20px 30px 20px;
+}
+.itemH img{
+    margin-bottom: 30px;
+    width: 100px;
+}
+.itemH p{
+    font-size: 15px ;
+}
+.itemH:hover{
+    transform: scale(1.1);
+}
+/*Hobbies*/
+/*Formacion*/
+.contenedorFormacion{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorFormacion h1{
+    font-size: 2.5em;
+    margin-bottom: 1vh;
+}
+.contenedorItemsF{
+    gap: 10px;
+}
+.itemF{
+    width: 120px;
+    height: 150px;
+}
+
+.itemF img{
+    width: 90px;
+}
+.back h6{
+    font-size: small;
+    font-weight: bolder;
+    text-align: center;
+}
+.back p{
+    font-size:small;
+    text-align: center;
+}
+/*Formacion*/
+/*Proyectos*/
+.contenedorProyectos{
+    margin-top: 1vh;
+}
+.contenedorProyectos h1{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.contenedorCadaProyecto{
+    margin-top: 20px;
+}
+.imagenProyecto{
+    margin: 20px 0px;
+}
+.imagenProyecto img{
+    width: 300px;
+}
+.contenidoProyecto h2{
+    font-size: 3em;
+}
+.contenidoProyecto h4{
+    font-size: 1.7em;
+}
+.contenidoProyecto p{
+    font-size: 1.2em;
+}
+.infoProyecto{
+    gap: 20px;
+}
+.infoProyecto button{
+    padding: 15px;
+    font-size: 20px;
+}
+/*Contacto*/
+.contenedorContacto h1{
+    font-size: 3em;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.contenedorItemC input{
+    margin: 0px auto;
+    width: 300px;
+}
+.contenedorItemC textarea{
+    margin: 0px auto;
+}
+
+#formulario-mensaje .labelN{
+    left: 50px;
+}
+
+.boton{
+    width: 300px;
+}.boton span{
+    left: 25%;
+}
+/*Contacto*/
+/*Footer*/
+.contenedorFooter p{
+    margin: 10px;
+    font-size: 1em;
+}
+/*Footer*/
 }
