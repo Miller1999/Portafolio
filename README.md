@@ -7,12 +7,12 @@
 ## [Portafolio](https://miller1999.github.io/Portafolio/)
 
 ### Escritorio
-![Escritorio](Imagenes/imagen_2023-01-22_101342125.png)
+![Escritorio](assets/imagen_2023-04-10_094517528.png)
 ### Tablet
-![Tablet](Imagenes/imagen_2023-01-22_101447560.png)
+![Tablet](assets/imagen_2023-04-10_094606869.png)
 ### Celular
-![Celular](Imagenes/imagen_2023-01-22_101506758.png)
+![Celular](assets/imagen_2023-04-10_094551185.png)
 ***
-#challengeonecodificador4
+#challengeoneportafolio4
 ***
 # Gracias por la atención y por leer hasta aca
