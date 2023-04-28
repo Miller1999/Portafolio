@@ -74,10 +74,9 @@ inputs.forEach((input)=>{
 
 
 formulario.addEventListener('submit', (e) => {
-
 	if(campos.nombre &&  campos.email && campos.asunto && campos.mensaje ){
 		formulario.reset();
-
+        e.preventDefault();
 		document.getElementById('formulario-mensaje-enviado').classList.add('formulario-mensaje-enviado-activado');
 		setTimeout(() => {
 			document.getElementById('formulario-mensaje-enviado').classList.remove('formulario-mensaje-enviado-activado');
