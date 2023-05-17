@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll("#formulario input")
 const textarea = document.querySelectorAll("#formulario textarea")
 
 const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,50}$/,
+    nombre: /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/,
     correo: /^[a-zA-ZÀ-ÿ0-9_.+-]+@[a-z-]+\.[a-zA-Z0-9-.]+$/,
     asunto: /^[a-zA-ZÀ-ÿ\s]{1,50}$/,
     mensaje: /^[a-zA-ZÀ-ÿ\s]{1,300}$/
