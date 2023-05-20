@@ -1,6 +1,7 @@
 # Portafolio
 ***
 ## Portafolio desarrollado en HTML, CSS y JS
+![Insignia](assets/insignia.png)
 ***
 # Pagina Web
 

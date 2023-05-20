@@ -453,7 +453,7 @@ body{
 }
 .contenedorCadaProyecto{
     display: flex;
-    width: 90%;
+    width: 80%;
     margin-top: 10px;
     margin-bottom: 20px;
 }
