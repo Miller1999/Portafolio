@@ -165,6 +165,8 @@ body{
 }
 .fotoPerfil img{
     border-radius: 100%;
+    width: 500px;
+    height: 500px;
 }
 /*Sobre Mi*/
 /*Biografia*/
@@ -420,7 +422,7 @@ body{
 .itemF:hover .back{
     transform: perspective(500px) rotateY(360deg);
 }
-.back h6{
+.back h3{
     
     font-size: larger;
     font-weight: bolder;
@@ -746,6 +748,7 @@ body{
 }
 .fotoPerfil img{
     width: 80%;
+    height: 80%;
 }
 /*Sobre Mi*/
 /*Biografia*/
@@ -771,7 +774,8 @@ body{
     width: 150px;
 }
 .item img{
-    width: 75px;
+    width: 100px;
+    height: 100px;
 }
 /*skills*/
 /*Hobbies*/
@@ -796,6 +800,7 @@ body{
 .itemH img{
     margin-bottom: 30px;
     width: 100px;
+    height: 100px;
 }
 .itemH p{
     font-size: 15px ;
@@ -924,7 +929,8 @@ body{
 }
 .fotoPerfil img{
     border-radius: 100%;
-    width: 200px;
+    width: 80%;
+    height: 80%;
 }
 /*Sobre Mi*/
 /*Biografia*/
