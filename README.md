@@ -17,11 +17,11 @@ La pagina se puede ver en el link a continuacion
 ## [Portafolio](https://portafolio-miller-arias.vercel.app/) 
 Las diferentes pantallas de la pagina son:
 ### Escritorio
-![Escritorio](assets/imagen_2023-04-10_094517528.png)
+![Escritorio](assets/proyectos/Desktop.png)
 ### Tablet
-![Tablet](assets/imagen_2023-04-10_094606869.png)
+![Tablet](assets/Tablet.png)
 ### Celular
-![Celular](assets/imagen_2023-04-10_094551185.png)
+![Celular](assets/Celular.png)
 
 Tambien puedes ver el funcionamiento [aqui](https://www.youtube.com/watch?v=vrOMlrV89jU)
 ### Tecnologias usadas
