@@ -1,10 +1,7 @@
-@font-face {
-    font-family: "Most";
-    src: url(Mostwasted.ttf) format("truetype");
-}
 
 *{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -25,7 +22,7 @@ body{
     align-items: center;
 }
 .logo{
-    width: 50px;
+    width: 150px;
     height: 50px;
     padding: 10px 20px 10px 20px;
 }
@@ -33,12 +30,12 @@ body{
 .navegacion{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 1.5em;
 }
 
 .tituloNav{ 
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 2em;
     color: #36382E;
 
@@ -81,7 +78,7 @@ body{
     width: 40%;
 }
 .contenedorResumen h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 4em;
     margin-bottom: 5vh;
     color: #8003A5;
@@ -89,7 +86,7 @@ body{
 }
 .contenedorResumen p{
     display: inline-block;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 1.5em;
     margin-bottom: 5vh;
     color: #36382E;
@@ -178,13 +175,13 @@ body{
     margin: 50px;
 }
 .contenedorBiografia h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 3em;
     margin-bottom: 5vh;
     animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorBiografia p{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 1.5em;
     width: 80%;
     line-height: 2em;
@@ -199,7 +196,7 @@ body{
     
 }
 .tituloskills{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 3em;
     margin-bottom: 5vh;
     animation: cambioTamaño infinite 0.8s ease-in-out;
@@ -223,7 +220,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     transition: all 1s ease;
 }
 .item img{
@@ -250,7 +247,7 @@ body{
     margin-bottom: 50px;
 }
 .contenedorHobbies h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 3em;
     margin-bottom: 5vh;
     animation: cambioTamaño infinite 0.8s ease-in-out;
@@ -270,7 +267,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     border-radius: 20px;
     font-size: 20px;
     transition: all 1s ease;
@@ -293,75 +290,73 @@ body{
     opacity: 0;
 }
 #leer:hover{
-    background-image: url(leeranimado.gif);
+    background-image: url("https://media1.giphy.com/media/WoWm8YzFQJg5i/giphy.gif?cid=ecf05e47o1s6mv0lzv3ucrxfud6ukwnu1u2mt60k0ru5e74g&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     background-position: -25px;
     transition:  1s ease-in-out;
 }
 #escuchar:hover{
-    background-image: url(musicanimado.gif);
+    background-image: url("https://media2.giphy.com/media/JxxkWxHOEDrq0/giphy.gif?cid=ecf05e47yk0jcb83xotvunpgh0b8xf46ridtxbz32s3q29ey&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
-    background-position: -25px;
+    background-position: center;
     transition:  1s ease-in-out;
 }
 #dibujar:hover{
-    background-image: url(drawanimado.gif);
+    background-image: url("https://media4.giphy.com/media/QLj1DlO0Qe2Ws/giphy.gif?cid=ecf05e47wo1ps23a0i03qxodgb7ayv4fx7216siqzd51vvvq&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
-    background-position: -125px;
+    background-position: -50px;
     transition:  1s ease-in-out;
 }
 #programar:hover{
-    background-image: url(codeanimado.gif);
+    background-image: url("https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif?cid=ecf05e47go9owss246shld31j6f0st737hik866z8y53oz78&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     background-position: -15px;
     transition:  1s ease-in-out;
 }
 #bicicleta:hover{
-    background-image: url(bikeanimado.gif);
+    background-image: url("https://media2.giphy.com/media/l0MYyhUkkGGKaGcIo/giphy.gif?cid=ecf05e47xt6zburl8sttso8q3a7zpm51aw3xluza97hsih5m&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
-    background-position: -80px;
+    background-position: -30px;
     transition:  1s ease-in-out;
 }
 #viajar:hover{
-    background-image: url(travelanimado.gif);
+    background-image: url("https://media0.giphy.com/media/AErExHJVxRbkm5hPkB/giphy.gif?cid=ecf05e4721n7fcepndi1miiore1lagfo4h1e3qvusqo0z2lq&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
-    background-position: -25px;
     transition:  1s ease-in-out;
 }
 #jugar:hover{
-    background-image: url(gamesanimado.gif);
-    background-size: cover;
-    background-position: -100px;
-    transition:  1s ease-in-out;
-}
-#bailar:hover{
-    background-image: url(danceanimado.gif);
-    background-size: cover;
-    background-position: -100px;
-    transition:  1s ease-in-out;
-}
-#caminar:hover{
-    background-image: url(walkanimado.gif);
+    background-image: url("https://media1.giphy.com/media/94DBMnpVEbJLy/giphy.gif?cid=ecf05e47fpr9q64vdqgloyz60jl1lumftshqmcw8xqntj9b3&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     background-position: -50px;
     transition:  1s ease-in-out;
 }
+#bailar:hover{
+    background-image: url("https://media1.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif?cid=ecf05e47lusszbeken1lq0g8qf46ofpjqr9g6o2o5snffnz6&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    background-size: cover;
+    background-position: -50px;
+    transition:  1s ease-in-out;
+}
+#caminar:hover{
+    background-image: url("https://media3.giphy.com/media/VhWFMl9M6zKpqB2dkc/giphy.gif?cid=ecf05e47jcj94talwjwvz549yw6w3i13f3nfhr2r554mcb8v&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    background-size: cover;
+    transition:  1s ease-in-out;
+}
 #aprender:hover{
-    background-image: url(learnanimado.gif);
+    background-image: url("https://media3.giphy.com/media/Ec5RkrmARxPmTuXgrZ/giphy.gif?cid=ecf05e47oa4698qvjy5y4muemi5sn9n0t3q50b4c7s27r499&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #gimnasio:hover{
-    background-image: url(gymanimado.gif);
+    background-image: url("https://media3.giphy.com/media/xTk9ZRHPeMzAO1njBC/giphy.gif?cid=ecf05e473i4u80vg0i9k4mu9d4ewle0xzii7lufr06hn1nrk&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
     background-position: -45px;
     transition:  1s ease-in-out;
 }
 #nadar:hover{
-    background-image: url(swimanimado.gif);
+    background-image: url("https://media2.giphy.com/media/l3V0mnnGcVblF8bAI/giphy.gif?cid=ecf05e47ocstmq1h5gimnfivbb5gqi164cyq4eyy461ilc3g&ep=v1_gifs_search&rid=giphy.gif&ct=g");
     background-size: cover;
-    background-position: -200px;
+    background-position: -50px;
     transition:  1s ease-in-out;
 }
 /*Hobbies*/
@@ -373,7 +368,7 @@ body{
     flex-wrap: wrap;
 }
 .contenedorFormacion h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 3em;
     margin-bottom: 5vh;
     animation: cambioTamaño infinite 0.8s ease-in-out;
@@ -427,12 +422,12 @@ body{
     
     font-size: larger;
     font-weight: bolder;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     margin-bottom: 25px;
 }
 .back p{
     font-size: medium;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     margin-bottom: 25px;
 }
 /*Formacion*/
@@ -445,7 +440,7 @@ body{
     margin-top: 2vh;
 }
 .contenedorProyectos h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 3em;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -459,19 +454,19 @@ body{
 }
 .imagenProyecto{
     margin: 50px;
-    width: 100vw;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagenProyecto iframe{
+.imagenProyecto img{
     width: 100%;
     height: 100%;
     border-radius: 25px;
     box-shadow: 20px 20px 10px 1px rgba(0,0,0,0.75);
     transition: all .5s ease-in-out;
 }
-.imagenProyecto iframe:hover{
+.imagenProyecto img:hover{
     transform: scale(1.01);
     box-shadow: 20px 20px 20px 1px rgba(0,0,0,0.75);
 }
@@ -480,19 +475,20 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
     gap: 10px;
 }
 .contenidoProyecto h2{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 4em;
     animation: cambioColor 8s infinite;
 }
 .contenidoProyecto h4{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 2em;
 }
 .contenidoProyecto p{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 1.5em;
     line-height: 2em;
     text-align: justify;
@@ -533,7 +529,7 @@ body{
     padding: 20px;
 }
 .contenedorContacto h1{
-    font-family: "Most";
+    font-family: "Lobster";
     font-size: 4em;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -549,13 +545,13 @@ body{
 .contenedorItemC label{
     margin-bottom: 10px;
     font-size: larger;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     color: #36382E;
 }
 .contenedorItemC input{
     width: 500px;
     height: 25px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     border-radius: 10px;
     border: 0;
 }
@@ -592,7 +588,7 @@ body{
     height: 50px;
     background-color: #36382E;
     color: #E5E5E5;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     font-size: 20px;
     align-items: center;
     justify-content: center;
@@ -634,7 +630,7 @@ body{
 }
 .formulario-input-error{
     font-size: 15px;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Raleway', serif;
     color: #bb2929;
     margin-top: 10px;
     display: none;
@@ -686,7 +682,7 @@ body{
 .contenedorFooter p{
     margin: 50px;
     font-size: 3em;
-    font-family: "Most";
+    font-family: "Lobster";
     animation: cambioColor 10s ease infinite;
 }
 /*Footer*/
@@ -711,6 +707,9 @@ body{
 /*Navegacion*/
 .contenedorHeader{
     flex-direction: column;
+}
+.logo{
+    width: 100px;
 }
 .navegacion{
     justify-content: center;
@@ -819,12 +818,18 @@ body{
 .contenedorCadaProyecto{
     flex-wrap: wrap;
     margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .imagenProyecto{
     margin: 20px 0px;
 }
 .imagenProyecto img{
     width: 300px;
+}
+.contenidoProyecto{
+    width: 90%;
 }
 .contenidoProyecto h2{
     font-size: 3em;
