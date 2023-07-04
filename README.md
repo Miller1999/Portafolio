@@ -17,7 +17,7 @@ La pagina se puede ver en el link a continuacion
 ## [Portafolio](https://portafolio-miller-arias.vercel.app/) 
 Las diferentes pantallas de la pagina son:
 ### Escritorio
-![Escritorio](assets/proyectos/Desktop.png)
+![Escritorio](assets/Proyectos/Desktop.png)
 ### Tablet
 ![Tablet](assets/Tablet.png)
 ### Celular
