@@ -1,0 +1,28 @@
+{
+	"skills": [
+		{
+			"title": "JavaScript",
+			"img": "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+		},
+		{
+			"title": "Manejo del tiempo",
+			"img": "https://www.svgrepo.com/show/530409/time.svg"
+		},
+		{
+			"title": "HTML",
+			"img": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
+		}
+	],
+	"hobbies": [
+		{
+			"title": "Leer",
+			"img": "https://www.svgrepo.com/show/414085/read.svg",
+			"id": "leer"
+		},
+		{
+			"title": "Escuchar musica",
+			"img": "https://www.svgrepo.com/show/528308/headphones-round-sound.svg",
+			"id": "escuchar"
+		}
+	]
+}
