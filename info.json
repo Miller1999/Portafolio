@@ -24,5 +24,13 @@
 			"img": "https://www.svgrepo.com/show/528308/headphones-round-sound.svg",
 			"id": "escuchar"
 		}
+	],
+	"education": [
+		{
+			"logo": "https://seeklogo.com/images/U/universidad-nacional-de-colombia-logo-1B5A327344-seeklogo.com.png",
+			"title": "Ingenieria electrónica",
+			"institution": "Universidad Nacional de Colombia",
+			"date": "2016 - Actualidad"
+		}
 	]
 }
