@@ -2,7 +2,7 @@ const container = document.querySelector(".Skills");
 
 const createNewSkill = (logo, title) => {
 	const card = document.createElement("div");
-	card.classList.add("item");
+	card.classList.add("Skills--item");
 	const content = `
     <img src="${logo}" alt="${title} loading="lazy">
     <p>${title}</p>

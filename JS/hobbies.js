@@ -1,8 +1,8 @@
-const containerH = document.querySelector(".contenedorItems");
+const containerH = document.querySelector(".Hobbies");
 
 const createNewHobbie = (logo, title, id) => {
 	const card = document.createElement("div");
-	card.classList.add("itemH");
+	card.classList.add("Hobbies--item");
 	card.setAttribute("id", id);
 	const content = `
     <img src="${logo}" alt="${title} loading="lazy">

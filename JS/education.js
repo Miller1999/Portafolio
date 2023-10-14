@@ -1,13 +1,13 @@
-const containerF = document.querySelector(".contenedorItemsF");
+const containerF = document.querySelector(".Schools");
 
 const createNewEducation = (logo, title, date, institution) => {
 	const card = document.createElement("div");
-	card.classList.add("itemF");
+	card.classList.add("Schools--item");
 	const content = `
-    <div class="front">
+    <div class="Schools--item-front">
 		<img loading="lazy" src="${logo}" alt="${institution}" />
 	</div>
-	<div class="back">
+	<div class="Schools--item-back">
 		<h3>${title}</h3>
 		<p>${institution}</p>
 		<p>${date}</p>

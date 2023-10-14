@@ -32,5 +32,16 @@
 			"institution": "Universidad Nacional de Colombia",
 			"date": "2016 - Actualidad"
 		}
+	],
+	"projects": [
+		{
+			"title": "Portafolio",
+			"subtitle": "Pagina portafolio donde se encuentra mi trabajo como desarrollador",
+			"description": "Lo adivinaste esta pagina ha sido creada por mi desde 0, es decir, es la pagina donde te encuentras ahora, donde poco a poco ira cambiando a medida que aumente mi trabajo como desarrollador, aumente mis habilidades y trabaje en nuevos proyectos",
+			"repo": "https://github.com/Miller1999/Portafolio",
+			"link": "https://portafolio-six-virid.vercel.app/",
+			"img": "https://github.com/Miller1999/Portafolio/raw/main/assets/Proyectos/Desktop.png",
+			"video": "https://www.youtube.com/watch?v=vrOMlrV89jU"
+		}
 	]
 }
