@@ -157,6 +157,54 @@
 			"date": "June 2023"
 		},
 		{
+			"logo": "https://www.colombobogota.edu.co/wp-content/uploads/2020/06/Logo-Colombo.png",
+			"title": "C1 English Level",
+			"institution": "Centro Colombo Americano Bogotá",
+			"date": "May 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Formacion Python, Data Science en OCI y Oracle Analytics",
+			"institution": "Oracle Next Education + Alura",
+			"date": "October 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
+			"institution": "Platzi",
+			"date": "September 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Formacion SQL con MySQL",
+			"institution": "Oracle Next Education + Alura",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Fundamentos de las bases de datos",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Backend con Node.js: API REST con Express.js",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de React.js con Vite.js y TailwindCSS",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de NPM",
+			"institution": "Platzi",
+			"date": "July 2023"
+		},
+		{
 			"logo": "https://static.platzi.com/static/images/footer/logo.png",
 			"title": "Curso React.js",
 			"institution": "Platzi",
@@ -175,40 +223,21 @@
 			"date": "June 2023"
 		},
 		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso Profesional de Git y Github",
+			"institution": "Platzi",
+			"date": "February 2023"
+		},
+		{
 			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
 			"title": "Emprendimiento",
 			"institution": "Oracle Next Education + Alura",
 			"date": "May 2023"
 		},
-
-		{
-			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
-			"title": "Desarrollo Personal",
-			"institution": "Oracle Next Education + Alura",
-			"date": "January 2023"
-		},
 		{
 			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
 			"title": "Business Agility",
 			"institution": "Oracle Next Education + Alura",
-			"date": "February 2023"
-		},
-		{
-			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
-			"title": "Formacion SQL con MySQL",
-			"institution": "Oracle Next Education + Alura",
-			"date": "August 2023"
-		},
-		{
-			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
-			"title": "Formacion Python, Data Science en OCI y Oracle Analytics",
-			"institution": "Oracle Next Education + Alura",
-			"date": "October 2023"
-		},
-		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso Profesional de Git y Github",
-			"institution": "Platzi",
 			"date": "February 2023"
 		},
 		{
@@ -224,40 +253,10 @@
 			"date": "January 2023"
 		},
 		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso de NPM",
-			"institution": "Platzi",
-			"date": "July 2023"
-		},
-		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso de Fundamentos de las bases de datos",
-			"institution": "Platzi",
-			"date": "August 2023"
-		},
-		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso de Backend con Node.js: API REST con Express.js",
-			"institution": "Platzi",
-			"date": "August 2023"
-		},
-		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
-			"institution": "Platzi",
-			"date": "September 2023"
-		},
-		{
-			"logo": "https://static.platzi.com/static/images/footer/logo.png",
-			"title": "Curso de React.js con Vite.js y TailwindCSS",
-			"institution": "Platzi",
-			"date": "August 2023"
-		},
-		{
-			"logo": "https://www.colombobogota.edu.co/wp-content/uploads/2020/06/Logo-Colombo.png",
-			"title": "C1 English Level",
-			"institution": "Centro Colombo Americano Bogotá",
-			"date": "May 2023"
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Desarrollo Personal",
+			"institution": "Oracle Next Education + Alura",
+			"date": "January 2023"
 		}
 	],
 	"projects": [
