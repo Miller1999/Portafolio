@@ -1,20 +1,27 @@
 * {
 	box-sizing: border-box;
+	font-family: "Raleway";
+	transition: all 0.3s linear;
 }
-
+strong {
+	font-weight: 900;
+	color: black;
+}
 body {
 	background-image: url(Fondo.webp);
 	width: 100vw;
 	overflow-x: hidden;
-	font-family: "Raleway", serif;
+	position: relative;
+	font-family: "Raleway";
 }
+
 /*Navegacion*/
 .header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: #3199d0;
+	background-color: transparent;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -23,112 +30,130 @@ body {
 .logo {
 	display: flex;
 	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
 }
 .logo img {
-	width: 6rem;
-	height: 6rem;
-	padding: 1rem 1.25rem;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 100%;
+	padding: 1rem 1rem;
 }
 .header--titulo {
-	font-family: "Raleway", serif;
 	font-size: 2rem;
-	color: #294d5c;
+	color: #307bd5;
 }
 .nav {
 	display: flex;
 	flex-wrap: wrap;
-	font-family: "Raleway", serif;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	color: #307bd5;
 }
 
 .nav--link {
 	padding: 0.5rem 1.5rem;
 	text-decoration: none;
-	color: #294d5c;
+	color: #307bd5;
 	transition: 0.5s ease-in-out all;
 }
 
 .nav--link:hover {
-	color: #08629c;
+	color: #8003a5;
 	cursor: pointer;
 	transform: scale(1.1);
-	border-bottom: solid #08629c;
+	border-bottom: solid #8003a5;
 }
 /*Navegacion*/
 /*Sobre Mi*/
 .aboutMe {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 9.25rem;
 	align-items: center;
-	margin-top: 10rem;
+	margin-top: 20rem;
+	margin-bottom: 10rem;
+	text-align: center;
 }
 .aboutMe--summary {
-	width: 50%;
+	width: 70%;
 }
 .aboutMe--summary h1 {
 	font-family: "Lobster";
-	font-size: 4.5rem;
+	font-size: 5rem;
 	margin-bottom: 5rem;
-	animation: cambioColor 5s infinite;
 }
 .aboutMe--summary p {
-	font-family: "Raleway", serif;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	margin-bottom: 5rem;
 	color: #36382e;
-	line-height: 2.5rem;
+	line-height: 3.5rem;
 }
+.button {
+	width: 20rem;
+	height: 5rem;
+	font-weight: bolder;
+	font-size: x-large;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s linear;
+}
+.button--important-high {
+	color: white;
+	background-color: #8003a5;
+}
+
 .socialMedia {
+	position: fixed;
 	display: flex;
-	gap: 100px;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	gap: 1rem;
+	right: 0;
+	top: 40%;
+	padding: 0.25rem;
+	background-color: white;
+	border-radius: 1.25rem 0rem 0rem 1.25rem;
 }
 .socialMedia > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	transition: all 1s ease;
+}
+.socialMedia > div > a {
+	padding: 0.25rem;
+	transition: all 0.3s ease-in-out;
+	border-radius: 1.25rem;
 }
 .socialMedia > div img {
 	width: 50px;
 	height: 50px;
-	border-radius: 100%;
-	transition: 0.5s all;
-	margin: 15px;
 }
-.socialMedia > div img:hover {
+.socialMedia > div a:hover {
 	transform: scale(1.1);
-	box-shadow: 0px 0px 33px 4px rgba(128, 3, 165, 1);
-}
-
-.profile img {
-	border-radius: 100%;
-	width: 30rem;
-	height: 30rem;
+	background-color: rgba(49, 153, 208, 0.3);
 }
 /*Sobre Mi*/
 /*Biografia*/
 .biography {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	width: 100%;
+	padding: 0rem 7rem;
+	margin-bottom: 10rem;
 }
-.biography h1 {
+.biography--text {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+.biography--text h1 {
 	font-family: "Lobster";
 	font-size: 3rem;
 	margin-bottom: 5rem;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
+	text-align: center;
 }
-.biography p {
-	font-family: "Raleway", serif;
+.biography--text p {
 	font-size: 1.5em;
-	width: 90%;
 	line-height: 2.5rem;
 }
 /*Biografia*/
@@ -137,190 +162,63 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 50vw;
 }
 .skills h2 {
 	font-family: "Lobster";
 	font-size: 3rem;
 	margin-bottom: 5rem;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .skills--sections {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
 }
 .Skills {
 	display: flex;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	padding: 3.125rem;
-	gap: 3.125rem;
+	flex-wrap: wrap;
+	overflow: hidden;
+	padding: 0rem 0rem 0rem 4rem;
+	gap: 2.125rem;
 }
 .Skills--item {
 	display: flex;
 	flex-direction: column;
-	width: 16rem;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	font-family: "Raleway", serif;
 	transition: all 1s ease;
+	width: 6rem;
+	height: 6rem;
 }
 .Skills--item img {
-	margin: 1rem;
-	width: 12.5rem;
-	height: 12.5rem;
+	width: 5rem;
+	height: 5rem;
 }
 .Skills--item:hover {
 	transform: scale(1.2);
 	cursor: pointer;
 }
-.Skills--item:hover p {
-	transform: scale(1.3);
-	transform: translateY(1.25rem);
-	color: #8003a5;
-	transition: all 1s cubic-bezier(0.47, 0, 0.745, 0.715);
-}
 /*skills*/
-/*Hobbies*/
-.hobbies {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 6.25rem;
-	margin-bottom: 3.125rem;
-}
-.hobbies h2 {
-	font-family: "Lobster";
-	font-size: 3rem;
-	margin-bottom: 5rem;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
-}
-.Hobbies {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	gap: 3.125rem;
-	width: 90%;
-}
-.Hobbies--item {
-	display: flex;
-	flex-direction: column;
-	width: 12.5rem;
-	height: 12.5rem;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	font-family: "Raleway", serif;
-	border-radius: 1.25rem;
-	font-size: 1.25rem;
-	transition: all 1s ease;
-}
-.Hobbies--item img {
-	width: 100%;
-	height: 100%;
-}
-.Hobbies--item:hover {
-	transform: scale(1.2);
-	cursor: pointer;
-}
-.Hobbies--item:hover p {
-	color: #8003a5;
-	transform: translateY(2rem);
-	transition: 1s all ease;
-}
-.Hobbies--item img:hover {
-	opacity: 0;
-}
-#leer:hover {
-	background-image: url("https://media1.giphy.com/media/WoWm8YzFQJg5i/giphy.gif?cid=ecf05e47o1s6mv0lzv3ucrxfud6ukwnu1u2mt60k0ru5e74g&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -1.5rem;
-	transition: 1s ease-in-out;
-}
-#escuchar:hover {
-	background-image: url("https://media2.giphy.com/media/JxxkWxHOEDrq0/giphy.gif?cid=ecf05e47yk0jcb83xotvunpgh0b8xf46ridtxbz32s3q29ey&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: center;
-	transition: 1s ease-in-out;
-}
-#dibujar:hover {
-	background-image: url("https://media4.giphy.com/media/QLj1DlO0Qe2Ws/giphy.gif?cid=ecf05e47wo1ps23a0i03qxodgb7ayv4fx7216siqzd51vvvq&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -50px;
-	transition: 1s ease-in-out;
-}
-#programar:hover {
-	background-image: url("https://media1.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif?cid=ecf05e47go9owss246shld31j6f0st737hik866z8y53oz78&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -15px;
-	transition: 1s ease-in-out;
-}
-#bicicleta:hover {
-	background-image: url("https://media2.giphy.com/media/l0MYyhUkkGGKaGcIo/giphy.gif?cid=ecf05e47xt6zburl8sttso8q3a7zpm51aw3xluza97hsih5m&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -30px;
-	transition: 1s ease-in-out;
-}
-#viajar:hover {
-	background-image: url("https://media0.giphy.com/media/AErExHJVxRbkm5hPkB/giphy.gif?cid=ecf05e4721n7fcepndi1miiore1lagfo4h1e3qvusqo0z2lq&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	transition: 1s ease-in-out;
-}
-#jugar:hover {
-	background-image: url("https://media1.giphy.com/media/94DBMnpVEbJLy/giphy.gif?cid=ecf05e47fpr9q64vdqgloyz60jl1lumftshqmcw8xqntj9b3&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -50px;
-	transition: 1s ease-in-out;
-}
-#bailar:hover {
-	background-image: url("https://media1.giphy.com/media/l3V0lsGtTMSB5YNgc/giphy.gif?cid=ecf05e47lusszbeken1lq0g8qf46ofpjqr9g6o2o5snffnz6&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -50px;
-	transition: 1s ease-in-out;
-}
-#caminar:hover {
-	background-image: url("https://media3.giphy.com/media/VhWFMl9M6zKpqB2dkc/giphy.gif?cid=ecf05e47jcj94talwjwvz549yw6w3i13f3nfhr2r554mcb8v&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	transition: 1s ease-in-out;
-}
-#aprender:hover {
-	background-image: url("https://media3.giphy.com/media/Ec5RkrmARxPmTuXgrZ/giphy.gif?cid=ecf05e47oa4698qvjy5y4muemi5sn9n0t3q50b4c7s27r499&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -45px;
-	transition: 1s ease-in-out;
-}
-#gimnasio:hover {
-	background-image: url("https://media3.giphy.com/media/xTk9ZRHPeMzAO1njBC/giphy.gif?cid=ecf05e473i4u80vg0i9k4mu9d4ewle0xzii7lufr06hn1nrk&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -45px;
-	transition: 1s ease-in-out;
-}
-#nadar:hover {
-	background-image: url("https://media2.giphy.com/media/l3V0mnnGcVblF8bAI/giphy.gif?cid=ecf05e47ocstmq1h5gimnfivbb5gqi164cyq4eyy461ilc3g&ep=v1_gifs_search&rid=giphy.gif&ct=g");
-	background-size: cover;
-	background-position: -50px;
-	transition: 1s ease-in-out;
-}
-/*Hobbies*/
+
 /*Formacion*/
 .Education {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 10rem;
 }
 .Education h2 {
 	font-family: "Lobster";
 	font-size: 3rem;
 	margin-bottom: 5rem;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .Schools {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 3.125rem;
-	width: 90%;
+	width: 100%;
+	padding: 0rem 7rem;
 	margin-top: 1.5rem;
 	justify-content: center;
 }
@@ -364,12 +262,10 @@ body {
 .Schools--item-back h3 {
 	font-size: larger;
 	font-weight: bolder;
-	font-family: "Raleway", serif;
 	margin-bottom: 1.5rem;
 }
 .Schools--item-back p {
 	font-size: medium;
-	font-family: "Raleway", serif;
 	margin-bottom: 1.5rem;
 }
 /*Formacion*/
@@ -380,20 +276,19 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-bottom: 10rem;
+	width: 100%;
+	padding: 0rem 7rem;
 }
 .Projects h1 {
 	font-family: "Lobster";
 	font-size: 3rem;
-	margin-top: 5rem;
 	margin-bottom: 5rem;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .project {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
@@ -419,21 +314,18 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 40%;
+	width: 50%;
 	gap: 1rem;
 }
 .project--content h2 {
 	font-family: "Lobster";
 	font-size: 3rem;
-	animation: cambioColor 8s infinite;
 }
 .project--content h4 {
-	font-family: "Raleway", serif;
 	font-size: 2rem;
 	line-height: 2.5rem;
 }
 .project--content p {
-	font-family: "Raleway", serif;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 	text-align: justify;
@@ -445,24 +337,28 @@ body {
 }
 .project--buttons a {
 	text-decoration: none;
-	color: #36382e;
+	color: gray;
 }
-.project--buttons button {
-	padding: 15px;
-	background-color: rgba(49, 153, 208, 0.3);
-	border-radius: 20px;
-	border: none;
-	color: #36382e;
-	font-size: 35px;
-	transition: all 1s ease-in-out;
+
+.button--repository {
+	background-color: black;
+	border: 1px white solid;
+	border-radius: 1.25rem;
 }
-.project--buttons button:hover {
-	background-color: rgba(54, 56, 46, 0.3);
-	color: #8003a5;
-	transform: scale(1.1);
+.button--repository:hover {
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 1.25rem;
 }
-.project--buttons a:hover {
-	color: #8003a5;
+.button--link {
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 1.25rem;
+}
+.button--link:hover {
+	background-color: black;
+	border: 1px white solid;
+	border-radius: 1.25rem;
 }
 /*Proyectos*/
 /*Contacto*/
@@ -476,9 +372,7 @@ body {
 .contenedorContacto h1 {
 	font-family: "Lobster";
 	font-size: 4em;
-	margin-top: 5vh;
 	margin-bottom: 5vh;
-	animation: cambioTamaño infinite 0.8s ease-in-out;
 }
 .contenedorItemC {
 	display: flex;
@@ -490,13 +384,11 @@ body {
 .contenedorItemC label {
 	margin-bottom: 10px;
 	font-size: larger;
-	font-family: "Raleway", serif;
 	color: #36382e;
 }
 .contenedorItemC input {
 	width: 32rem;
 	height: 2rem;
-	font-family: "Raleway", serif;
 	border-radius: 10px;
 	border: 0;
 }
@@ -543,7 +435,6 @@ body {
 	height: 50px;
 	background-color: #36382e;
 	color: #e5e5e5;
-	font-family: "Raleway", serif;
 	font-size: 20px;
 	align-items: center;
 	justify-content: center;
@@ -586,7 +477,6 @@ body {
 }
 .formulario-input-error {
 	font-size: 15px;
-	font-family: "Raleway", serif;
 	color: #bb2929;
 	margin-top: 10px;
 	display: none;
@@ -634,50 +524,37 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 1rem 0rem;
 }
 .contenedorFooter p {
-	margin: 50px;
-	font-size: 3em;
-	font-family: "Lobster";
-	animation: cambioColor 10s ease infinite;
+	font-size: 2rem;
 }
 /*Footer*/
-/*Animaciones*/
-@keyframes cambioColor {
-	0% {
-		color: #8003a5;
-	}
-	20% {
-		color: #36382e;
-	}
-	40% {
-		color: #8003a5;
-	}
-	60% {
-		color: #36382e;
-	}
-	80% {
-		color: #8003a5;
-	}
-	90% {
-		color: #36382e;
-	}
-	100% {
-		color: #8003a5;
-	}
+/* Estilo de la barra de desplazamiento para navegadores compatibles */
+::-webkit-scrollbar {
+	width: 10px;
 }
-@keyframes cambioTamaño {
-	0% {
-		transform: scale(1);
-		color: #36382e;
-	}
-	50% {
-		transform: scale(1.1);
-		color: #8003a5;
-	}
-	100% {
-		transform: scale(1);
-		color: #36382e;
-	}
+
+::-webkit-scrollbar-track {
+	background: transparent;
 }
-/*Animaciones*/
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 1.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.move {
+	opacity: 0;
+}
+
+.move.center {
+	opacity: 100;
+}
+html {
+	scroll-behavior: smooth;
+}

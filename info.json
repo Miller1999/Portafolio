@@ -1,43 +1,156 @@
 {
+	"social": [
+		{
+			"name": "Github",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://github.com/Miller1999"
+		},
+		{
+			"name": "Linkedin",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://www.linkedin.com/in/miller-javier-arias-quintero/"
+		},
+		{
+			"name": "Github",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://github.com/Miller1999"
+		},
+		{
+			"name": "Github",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://github.com/Miller1999"
+		},
+		{
+			"name": "Github",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://github.com/Miller1999"
+		},
+		{
+			"name": "Github",
+			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"link": "https://github.com/Miller1999"
+		}
+	],
 	"skills": [
-		{
-			"title": "JavaScript",
-			"img": "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
-		},
-		{
-			"title": "Manejo del tiempo",
-			"img": "https://www.svgrepo.com/show/530409/time.svg"
-		},
 		{
 			"title": "HTML",
 			"img": "https://cdn.worldvectorlogo.com/logos/html-1.svg"
-		}
-	],
-	"hobbies": [
-		{
-			"title": "Leer",
-			"img": "https://www.svgrepo.com/show/414085/read.svg",
-			"id": "leer"
 		},
 		{
-			"title": "Escuchar musica",
-			"img": "https://www.svgrepo.com/show/528308/headphones-round-sound.svg",
-			"id": "escuchar"
+			"title": "CSS",
+			"img": "https://cdn.worldvectorlogo.com/logos/css-3.svg"
+		},
+		{
+			"title": "JS",
+			"img": "https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+		},
+		{
+			"title": "Git",
+			"img": "https://cdn.worldvectorlogo.com/logos/git-icon.svg"
+		},
+		{
+			"title": "Github",
+			"img": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg"
+		},
+		{
+			"title": "NPM",
+			"img": "https://cdn.worldvectorlogo.com/logos/npm.svg"
+		},
+		{
+			"title": "JSON",
+			"img": "https://cdn.worldvectorlogo.com/logos/json-5.svg"
+		},
+		{
+			"title": "React",
+			"img": "https://cdn.worldvectorlogo.com/logos/react-2.svg"
+		},
+		{
+			"title": "Vite.js",
+			"img": "https://cdn.worldvectorlogo.com/logos/vitejs.svg"
+		},
+		{
+			"title": "Next.js",
+			"img": "https://cdn.worldvectorlogo.com/logos/next-js.svg"
+		},
+		{
+			"title": "Node.js",
+			"img": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg"
+		},
+		{
+			"title": "Tailwind CSS",
+			"img": "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg"
+		},
+		{
+			"title": "MySQL",
+			"img": "https://cdn.worldvectorlogo.com/logos/mysql-6.svg"
+		},
+		{
+			"title": "PostgreSQL",
+			"img": "https://cdn.worldvectorlogo.com/logos/postgresql.svg"
+		},
+		{
+			"title": "JWT",
+			"img": "https://cdn.worldvectorlogo.com/logos/jwt-3.svg"
+		},
+		{
+			"title": "Docker",
+			"img": "https://cdn.worldvectorlogo.com/logos/docker-4.svg"
+		},
+		{
+			"title": "Python",
+			"img": "https://cdn.worldvectorlogo.com/logos/python-5.svg"
+		},
+		{
+			"title": "English",
+			"img": "https://cdn.worldvectorlogo.com/logos/usa-4.svg"
+		},
+		{
+			"title": "Time Management",
+			"img": "https://www.svgrepo.com/show/530409/time.svg"
+		},
+		{
+			"title": "Communication",
+			"img": "https://www.svgrepo.com/show/407507/speaking-head.svg"
+		},
+		{
+			"title": "Quick Learning",
+			"img": "https://www.svgrepo.com/show/428746/poster-learn-communication.svg"
+		},
+		{
+			"title": "Proactivity",
+			"img": "https://www.svgrepo.com/show/489243/creativity-1.svg"
+		},
+		{
+			"title": "Creativity",
+			"img": "https://www.svgrepo.com/show/506928/des-palette.svg"
+		},
+		{
+			"title": "Patience",
+			"img": "https://www.svgrepo.com/show/283132/sand-clock.svg"
+		},
+		{
+			"title": "Leadership",
+			"img": "https://www.svgrepo.com/show/105340/leadership.svg"
+		},
+		{
+			"title": "TeamWork",
+			"img": "https://www.svgrepo.com/show/301080/team.svg"
 		}
 	],
 	"education": [
 		{
 			"logo": "https://seeklogo.com/images/U/universidad-nacional-de-colombia-logo-1B5A327344-seeklogo.com.png",
-			"title": "Ingenieria electrónica",
-			"institution": "Universidad Nacional de Colombia",
-			"date": "2016 - Actualidad"
+			"title": "Electronic Engineering",
+			"institution": "National University of colombia",
+			"date": "2016 - present"
 		}
 	],
 	"projects": [
 		{
-			"title": "Portafolio",
-			"subtitle": "Pagina portafolio donde se encuentra mi trabajo como desarrollador",
-			"description": "Lo adivinaste esta pagina ha sido creada por mi desde 0, es decir, es la pagina donde te encuentras ahora, donde poco a poco ira cambiando a medida que aumente mi trabajo como desarrollador, aumente mis habilidades y trabaje en nuevos proyectos",
+			"title": "Portfolio",
+			"subtitle": "Personal Website where you can see all my projects and my experience",
+			"description": "Hey there! This website? Yep, I built it from scratch, and you're right in the middle of it! It's where you'll witness all the cool stuff I'm working on as I level up my web development skills. So, expect it to change and grow along with me as I tinker with new projects and make the web more awesome!",
+			"tech": "HTML, CSS and JS",
 			"repo": "https://github.com/Miller1999/Portafolio",
 			"link": "https://portafolio-six-virid.vercel.app/",
 			"img": "https://github.com/Miller1999/Portafolio/raw/main/assets/Proyectos/Desktop.png",

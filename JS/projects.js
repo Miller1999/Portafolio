@@ -4,6 +4,7 @@ const createNewProject = (
 	title,
 	subtitle,
 	description,
+	tech,
 	repo,
 	link,
 	img,
@@ -27,13 +28,16 @@ const createNewProject = (
 		<p>
 			${description}
 		</p>
+		<p>
+		<strong>Made using: ${tech}</strong>
+		</p>
 		<div class="project--buttons">
-			<button>
+			<button class="button button--repository">
 				<a href="${repo}" target="_blank">
-					Repositorio
+					Repo
 				</a>
 			</button>
-			<button>
+			<button class="button button--link">
 				<a href="${link}" target="_blank">
 					${title}
 				</a>
@@ -55,6 +59,7 @@ fetch("../info.json")
 				project.title,
 				project.subtitle,
 				project.description,
+				project.tech,
 				project.repo,
 				project.link,
 				project.img,

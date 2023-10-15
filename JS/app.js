@@ -1,3 +1,4 @@
+const logo = document.querySelector(".logo");
 const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario input");
 const textarea = document.querySelectorAll("#formulario textarea");
@@ -8,6 +9,10 @@ const expresiones = {
 	asunto: /^[a-zA-ZÀ-ÿ\s]{1,50}$/,
 	mensaje: /^[a-zA-ZÀ-ÿ\s]{1,300}$/,
 };
+
+logo.addEventListener("click", () => {
+	window.location.assign("http://localhost:5500");
+});
 
 const campos = {
 	nombre: false,
