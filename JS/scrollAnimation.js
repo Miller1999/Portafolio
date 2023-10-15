@@ -1,5 +1,7 @@
 const items = document.querySelectorAll(".move");
-
+const header = document.querySelector("header");
+const navlinks = document.querySelectorAll(".nav--link");
+const title = document.querySelector(".header--titulo");
 const mirarCajas = () => {
 	//innerHeight -> mide el espacio de la pantalla
 	const cabeOtro = (window.innerHeight / 5) * 4;
@@ -34,10 +36,6 @@ document.querySelectorAll(".nav--link").forEach((link) => {
 		});
 	});
 });
-
-const header = document.querySelector("header");
-const navlinks = document.querySelectorAll(".nav--link");
-const title = document.querySelector(".header--titulo");
 
 window.addEventListener("scroll", () => {
 	if (scrollY >= 112) {

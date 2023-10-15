@@ -7,28 +7,28 @@
 		},
 		{
 			"name": "Linkedin",
-			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+			"logo": "https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg",
 			"link": "https://www.linkedin.com/in/miller-javier-arias-quintero/"
 		},
 		{
-			"name": "Github",
-			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-			"link": "https://github.com/Miller1999"
+			"name": "X",
+			"logo": "https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png",
+			"link": "https://twitter.com/miller_arias"
 		},
 		{
-			"name": "Github",
-			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-			"link": "https://github.com/Miller1999"
+			"name": "Correo",
+			"logo": "https://www.svgrepo.com/show/490954/mail.svg",
+			"link": "mailto:millerjavierarias@gmail.com"
 		},
 		{
-			"name": "Github",
-			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-			"link": "https://github.com/Miller1999"
+			"name": "Whatsapp",
+			"logo": "https://cdn.worldvectorlogo.com/logos/whatsapp-3.svg",
+			"link": "whatsapp://send?phone=+573138220202"
 		},
 		{
-			"name": "Github",
-			"logo": "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
-			"link": "https://github.com/Miller1999"
+			"name": "CV",
+			"logo": "https://www.svgrepo.com/show/324311/resume-business-cv-work-job-curriculum-2.svg",
+			"link": "https://drive.google.com/file/d/1VNXyDn70KhxDBljKC8pFqNJeT0JuH6eN/view?usp=sharing"
 		}
 	],
 	"skills": [
@@ -143,6 +143,121 @@
 			"title": "Electronic Engineering",
 			"institution": "National University of colombia",
 			"date": "2016 - present"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Full Stack Developer con JavaScript",
+			"institution": "Platzi",
+			"date": "September 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "FrontEnd Developer",
+			"institution": "Oracle Next Education + Alura",
+			"date": "June 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso React.js",
+			"institution": "Platzi",
+			"date": "July 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Formación React.js",
+			"institution": "Oracle Next Education + Alura",
+			"date": "June 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso FrontEnd Developer",
+			"institution": "Platzi",
+			"date": "June 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Emprendimiento",
+			"institution": "Oracle Next Education + Alura",
+			"date": "May 2023"
+		},
+
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Desarrollo Personal",
+			"institution": "Oracle Next Education + Alura",
+			"date": "January 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Business Agility",
+			"institution": "Oracle Next Education + Alura",
+			"date": "February 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Formacion SQL con MySQL",
+			"institution": "Oracle Next Education + Alura",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://caelum-online-public.s3.amazonaws.com/ESP-WD-43-alura-latam-ebook-html-css-javascript/alura_latam_logos-imagens/ALURA_LATAM_LOGO_LIGHT.png",
+			"title": "Formacion Python, Data Science en OCI y Oracle Analytics",
+			"institution": "Oracle Next Education + Alura",
+			"date": "October 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso Profesional de Git y Github",
+			"institution": "Platzi",
+			"date": "February 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de productividad y organización",
+			"institution": "Platzi",
+			"date": "January 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de gestión efectiva del tiempo",
+			"institution": "Platzi",
+			"date": "January 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de NPM",
+			"institution": "Platzi",
+			"date": "July 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Fundamentos de las bases de datos",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Backend con Node.js: API REST con Express.js",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
+			"institution": "Platzi",
+			"date": "September 2023"
+		},
+		{
+			"logo": "https://static.platzi.com/static/images/footer/logo.png",
+			"title": "Curso de React.js con Vite.js y TailwindCSS",
+			"institution": "Platzi",
+			"date": "August 2023"
+		},
+		{
+			"logo": "https://www.colombobogota.edu.co/wp-content/uploads/2020/06/Logo-Colombo.png",
+			"title": "C1 English Level",
+			"institution": "Centro Colombo Americano Bogotá",
+			"date": "May 2023"
 		}
 	],
 	"projects": [
@@ -155,6 +270,56 @@
 			"link": "https://portafolio-six-virid.vercel.app/",
 			"img": "https://github.com/Miller1999/Portafolio/raw/main/assets/Proyectos/Desktop.png",
 			"video": "https://www.youtube.com/watch?v=vrOMlrV89jU"
+		},
+		{
+			"title": "EarthQuestion",
+			"subtitle": "Quiz about flags, capitals and countries around the world",
+			"description": "This app is specifically designed for individuals who are passionate about flags and maps. It serves as an excellent tool for skill enhancement and friendly challenges. Currently, it is being utilized in an educational setting to support certain classes, facilitating skill development among students. The app was developed using React and Vite, incorporating Tailwind CSS, and it relies on a public API to access country information.",
+			"tech": "React, Vite and Tailwind",
+			"repo": "https://github.com/Miller1999/EarthQuesTion",
+			"link": "https://earthquestion.vercel.app/",
+			"img": "https://user-images.githubusercontent.com/22383830/264172609-c15f8c10-0817-44b4-b692-04d3fc43912e.png",
+			"video": "#"
+		},
+		{
+			"title": "QuoteVerse",
+			"subtitle": "Get inspire",
+			"description": "Do you want to hear the wisdom of famous people or seek inspiration? Allow me to introduce QuoteVerse, where you can discover a plethora of quotes from some of the most prominent and accomplished individuals in the world, including Steve Jobs, Albert Einstein, Winston Churchill, and Jeanne Moreau. This platform was crafted using React and Vite, incorporating Tailwind CSS and an API to provide access to quotes and their respective authors.",
+			"tech": "React, Vite and Tailwind",
+			"repo": "https://github.com/Miller1999/QuoteVerse",
+			"link": "https://quote-verse-phi.vercel.app/",
+			"img": "https://user-images.githubusercontent.com/22383830/261489316-e7ac437d-4ef3-4f62-8595-c9178c12d06a.png",
+			"video": "#"
+		},
+		{
+			"title": "ToDoGo",
+			"subtitle": "Organize yourself!!!",
+			"description": "This app is designed to assist you in your daily routine. You can easily add your daily tasks, filter them by completed or pending status, and even delete all tasks when they are no longer needed. The app is developed using React, Vite, Tailwind, and Material-UI (MUI).",
+			"tech": "React, Vite, Tailwind and MUI",
+			"repo": "https://github.com/Miller1999/ToDoGo",
+			"link": "https://to-do-go-ten.vercel.app/",
+			"img": "https://user-images.githubusercontent.com/22383830/257082162-fcb915b5-66b0-4764-acb6-8f726300cf5a.png",
+			"video": "#"
+		},
+		{
+			"title": "House Finder",
+			"subtitle": "Airbnb App",
+			"description": "Welcome to our website, where you can search for houses in Finland using our database. Think of it as your own mini Airbnb, tailored specifically for finding accommodations in Finland. Whether you're planning a trip, looking for a place to stay, or exploring various housing options, our platform is here to help you discover your ideal living space in this beautiful Scandinavian country.",
+			"tech": "React, Styled components, UUID, MUI and Axios",
+			"repo": "https://github.com/Miller1999/HouseFinder",
+			"link": "https://house-finder-eight.vercel.app/",
+			"img": "https://user-images.githubusercontent.com/22383830/256976042-3c22c404-627a-4dbf-ab41-be120778e338.png",
+			"video": "#"
+		},
+		{
+			"title": "Enkripto",
+			"subtitle": "Hide your messages",
+			"description": "This is an app that allows you to encrypt your messages and decode your messages, using some keys that are in the repository",
+			"tech": "HTML, CSS and JS",
+			"repo": "https://github.com/Miller1999/Encripto",
+			"link": "https://encripto.vercel.app",
+			"img": "https://github.com/Miller1999/Encripto/raw/main/Imagenes/imagen_2023-01-22_101342125.png",
+			"video": "https://www.youtube.com/watch?v=KNxUHY5TKPA&feature=youtu.be"
 		}
 	]
 }

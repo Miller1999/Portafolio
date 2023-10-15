@@ -32,16 +32,16 @@ const createNewProject = (
 		<strong>Made using: ${tech}</strong>
 		</p>
 		<div class="project--buttons">
-			<button class="button button--repository">
-				<a href="${repo}" target="_blank">
+		<a href="${repo}" target="_blank">
+		<button class="button button--repository">
 					Repo
+					</button>
 				</a>
-			</button>
-			<button class="button button--link">
 				<a href="${link}" target="_blank">
+				<button class="button button--link">
 					${title}
+					</button>
 				</a>
-			</button>
 		</div>
 	</div>
 	

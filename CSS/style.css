@@ -1,11 +1,14 @@
 * {
 	box-sizing: border-box;
 	font-family: "Raleway";
-	transition: all 0.3s linear;
+	transition: all 0.5s linear;
 }
 strong {
 	font-weight: 900;
 	color: black;
+}
+a {
+	text-decoration: none;
 }
 body {
 	background-image: url(Fondo.webp);
@@ -110,7 +113,7 @@ body {
 	justify-content: center;
 	gap: 1rem;
 	right: 0;
-	top: 40%;
+	top: 30%;
 	padding: 0.25rem;
 	background-color: white;
 	border-radius: 1.25rem 0rem 0rem 1.25rem;
@@ -119,19 +122,27 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 .socialMedia > div > a {
 	padding: 0.25rem;
 	transition: all 0.3s ease-in-out;
 	border-radius: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
 }
 .socialMedia > div img {
-	width: 50px;
-	height: 50px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
 }
 .socialMedia > div a:hover {
 	transform: scale(1.1);
-	background-color: rgba(49, 153, 208, 0.3);
 }
 /*Sobre Mi*/
 /*Biografia*/
@@ -244,13 +255,13 @@ body {
 }
 .Schools--item-front {
 	transform: perspective(500px) rotateY(0deg);
-	background-color: rgba(49, 153, 208, 0.3);
+	background-color: rgba(41, 77, 92, 0.5);
 }
 .Schools--item-back {
 	flex-direction: column;
 	transform: perspective(500px) rotateY(180deg);
-	background-color: rgba(41, 77, 92, 0.8);
-	color: #e5e5e5;
+	background-color: rgba(49, 153, 208, 0.3);
+	color: black;
 }
 .Schools--item:hover .Schools--item-front {
 	transform: perspective(500px) rotateY(180deg);
@@ -283,14 +294,18 @@ body {
 .Projects h1 {
 	font-family: "Lobster";
 	font-size: 3rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
+}
+.Projects h2 {
+	font-size: 1.5rem;
+	margin-bottom: 3rem;
 }
 .project {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .project--image {
 	margin: 3.5rem;
@@ -328,7 +343,7 @@ body {
 .project--content p {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	text-align: justify;
+	text-align: right;
 	margin-bottom: 0.75rem;
 }
 .project--buttons {
@@ -337,13 +352,13 @@ body {
 }
 .project--buttons a {
 	text-decoration: none;
-	color: gray;
 }
 
 .button--repository {
 	background-color: black;
 	border: 1px white solid;
 	border-radius: 1.25rem;
+	color: gray;
 }
 .button--repository:hover {
 	background-color: white;
@@ -354,6 +369,7 @@ body {
 	background-color: white;
 	border: 1px black solid;
 	border-radius: 1.25rem;
+	color: gray;
 }
 .button--link:hover {
 	background-color: black;
