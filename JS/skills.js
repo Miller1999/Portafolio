@@ -5,6 +5,7 @@ const createNewSkill = (logo, title) => {
 	card.classList.add("Skills--item");
 	const content = `
     <img src="${logo}" alt="${title} loading="lazy">
+		<span class="tooltipText">${title}</span>
   `;
 	card.innerHTML = content;
 	return card;

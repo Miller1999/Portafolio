@@ -11,7 +11,7 @@ const expresiones = {
 };
 
 logo.addEventListener("click", () => {
-	window.location.assign("http://localhost:5500");
+	window.location.assign("https://portafolio-miller-arias.vercel.app/");
 });
 
 const campos = {

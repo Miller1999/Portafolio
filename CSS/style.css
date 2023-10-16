@@ -149,7 +149,7 @@ body {
 .biography {
 	display: flex;
 	width: 100%;
-	padding: 0rem 7rem;
+	padding: 0rem 6rem;
 	margin-bottom: 10rem;
 }
 .biography--text {
@@ -178,7 +178,7 @@ body {
 .skills h2 {
 	font-family: "Lobster";
 	font-size: 3rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 .skills--sections {
 	display: flex;
@@ -188,7 +188,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: hidden;
-	padding: 0rem 0rem 0rem 4rem;
+	padding: 3rem 1rem 0rem 4rem;
 	gap: 2.125rem;
 }
 .Skills--item {
@@ -198,16 +198,53 @@ body {
 	text-align: center;
 	justify-content: center;
 	transition: all 1s ease;
+	position: relative;
 	width: 6rem;
 	height: 6rem;
 }
 .Skills--item img {
+	justify-content: center;
+	align-items: center;
 	width: 5rem;
 	height: 5rem;
 }
 .Skills--item:hover {
 	transform: scale(1.2);
 	cursor: pointer;
+}
+.Skills--item .tooltipText {
+	visibility: hidden;
+	width: 7.5rem;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	top: -30%;
+	left: 50%;
+	margin-left: -60px;
+
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.Skills--item .tooltipText::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.Skills--item:hover .tooltipText {
+	visibility: visible;
+	opacity: 1;
 }
 /*skills*/
 
@@ -390,6 +427,10 @@ body {
 	font-size: 4em;
 	margin-bottom: 5vh;
 }
+.contenedorContacto h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
 .contenedorItemC {
 	display: flex;
 	flex-direction: column;
@@ -421,18 +462,18 @@ body {
 	left: 20px;
 	transition: all 0.5s;
 }
-#nombre::placeholder,
-#correo::placeholder,
-#tema::placeholder,
+#Nombre::placeholder,
+#email::placeholder,
+#Tema::placeholder,
 #mensaje::placeholder {
 	visibility: hidden;
 }
-#nombre:not(:placeholder-shown) + .labelN,
-#nombre:focus + .labelN,
-#correo:not(:placeholder-shown) + .labelN,
-#correo:focus + .labelN,
-#tema:not(:placeholder-shown) + .labelN,
-#tema:focus + .labelN,
+#Nombre:not(:placeholder-shown) + .labelN,
+#Nombre:focus + .labelN,
+#email:not(:placeholder-shown) + .labelN,
+#email:focus + .labelN,
+#Tema:not(:placeholder-shown) + .labelN,
+#Tema:focus + .labelN,
 #mensaje:not(:placeholder-shown) + .labelN,
 #mensaje:focus + .labelN {
 	top: -13px;
