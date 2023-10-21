@@ -16,6 +16,12 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	font-family: "Raleway";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+html {
+	scroll-behavior: smooth;
 }
 
 /*Navegacion*/
@@ -28,7 +34,7 @@ body {
 	position: fixed;
 	top: 0;
 	z-index: 100;
-	width: 100%;
+	width: 100vw;
 }
 .logo {
 	display: flex;
@@ -49,6 +55,8 @@ body {
 .nav {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 	font-size: 1.5rem;
 	color: #307bd5;
 }
@@ -66,6 +74,29 @@ body {
 	transform: scale(1.1);
 	border-bottom: solid #8003a5;
 }
+.header button {
+	display: none;
+}
+.header button div {
+	width: 1.25rem;
+	height: 0.125rem;
+	background-color: #8003a5;
+}
+.barra1 {
+	transition: transform 0.6s linear;
+}
+.barra2 {
+	transform: translateY(-10px);
+	transition: transform 0.6s linear;
+}
+
+.girar:first-child {
+	transform: rotate(45deg);
+}
+.girar:last-child {
+	transform: translateY(-2px) rotate(-45deg);
+}
+
 /*Navegacion*/
 /*Sobre Mi*/
 .aboutMe {
@@ -92,8 +123,8 @@ body {
 	line-height: 3.5rem;
 }
 .button {
-	width: 20rem;
-	height: 5rem;
+	width: 18rem;
+	height: 4rem;
 	font-weight: bolder;
 	font-size: x-large;
 	border: none;
@@ -144,6 +175,7 @@ body {
 .socialMedia > div a:hover {
 	transform: scale(1.1);
 }
+
 /*Sobre Mi*/
 /*Biografia*/
 .biography {
@@ -167,6 +199,7 @@ body {
 	font-size: 1.5em;
 	line-height: 2.5rem;
 }
+
 /*Biografia*/
 /*skills*/
 .skills {
@@ -185,11 +218,13 @@ body {
 	flex-direction: column;
 }
 .Skills {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
 	overflow: hidden;
-	padding: 3rem 1rem 0rem 4rem;
-	gap: 2.125rem;
+	padding: 3rem 2rem 0rem 2rem;
+	grid-template-columns: 6.25rem 6.25rem 6.25rem 6.25rem 6.25rem;
+	grid-template-rows: 5rem auto 5rem;
+	column-gap: 0.75rem;
+	row-gap: 1rem;
 }
 .Skills--item {
 	display: flex;
@@ -214,19 +249,20 @@ body {
 }
 .Skills--item .tooltipText {
 	visibility: hidden;
-	width: 7.5rem;
+	width: 6rem;
 	background-color: #555;
 	color: #fff;
 	text-align: center;
 	padding: 5px 0;
 	border-radius: 6px;
+	font-size: x-small;
 
 	/* Position the tooltip text */
 	position: absolute;
 	z-index: 1;
 	top: -30%;
 	left: 50%;
-	margin-left: -60px;
+	margin-left: -3rem;
 
 	/* Fade in tooltip */
 	opacity: 0;
@@ -246,6 +282,7 @@ body {
 	visibility: visible;
 	opacity: 1;
 }
+
 /*skills*/
 
 /*Formacion*/
@@ -286,6 +323,7 @@ body {
 	transition: 1s ease-in-out;
 	border-radius: 3.125rem;
 	text-align: center;
+	padding: 1rem;
 }
 .Schools--item img {
 	width: 15rem;
@@ -316,6 +354,7 @@ body {
 	font-size: medium;
 	margin-bottom: 1.5rem;
 }
+
 /*Formacion*/
 /*Proyectos*/
 .Projects {
@@ -337,23 +376,29 @@ body {
 	font-size: 1.5rem;
 	margin-bottom: 3rem;
 }
+.Projects h3 {
+	font-family: "lobster";
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
 .project {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
+.project--description {
+	display: flex;
+}
 .project--image {
 	margin: 3.5rem;
 	width: 50%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .project--image img {
 	width: 100%;
-	height: 100%;
 	border-radius: 25px;
 	box-shadow: 1rem 1rem 0.75rem 0.1rem rgba(0, 0, 0, 0.5);
 	transition: all 0.5s ease-in-out;
@@ -369,7 +414,7 @@ body {
 	width: 50%;
 	gap: 1rem;
 }
-.project--content h2 {
+.project h2 {
 	font-family: "Lobster";
 	font-size: 3rem;
 }
@@ -380,12 +425,11 @@ body {
 .project--content p {
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	text-align: right;
 	margin-bottom: 0.75rem;
 }
 .project--buttons {
 	display: flex;
-	gap: 30px;
+	gap: 1.5rem;
 }
 .project--buttons a {
 	text-decoration: none;
@@ -413,6 +457,7 @@ body {
 	border: 1px white solid;
 	border-radius: 1.25rem;
 }
+
 /*Proyectos*/
 /*Contacto*/
 .contenedorContacto {
@@ -420,26 +465,27 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
 }
 .contenedorContacto h1 {
 	font-family: "Lobster";
-	font-size: 4em;
-	margin-bottom: 5vh;
+	font-size: 4rem;
+	margin-bottom: 1rem;
 }
 .contenedorContacto h2 {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 .contenedorItemC {
 	display: flex;
 	flex-direction: column;
-	padding: 15px;
+	padding: 1rem;
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
+	align-items: center;
 }
 .contenedorItemC label {
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	font-size: larger;
 	color: #36382e;
 }
@@ -455,11 +501,12 @@ body {
 }
 .contenedorItemC textarea {
 	border-radius: 10px;
+	width: 32rem;
 }
 .labelN {
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 1.25rem;
+	left: 1.25rem;
 	transition: all 0.5s;
 }
 #Nombre::placeholder,
@@ -582,9 +629,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 1rem 0rem;
+	margin-top: 3rem;
 }
 .contenedorFooter p {
-	font-size: 2rem;
+	font-size: 1rem;
 }
 /*Footer*/
 /* Estilo de la barra de desplazamiento para navegadores compatibles */
@@ -612,6 +660,159 @@ body {
 .move.center {
 	opacity: 100;
 }
-html {
-	scroll-behavior: smooth;
+@media (max-width: 425px) {
+	/* Estilos para dispositivos móviles */
+	.header button {
+		display: flex;
+		flex-direction: column;
+		height: 30px;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.nav {
+		flex-direction: column;
+		border-radius: 20px;
+		background-color: white;
+		position: fixed;
+		top: 5rem;
+		right: 1rem;
+	}
+	.nav--state-hidden {
+		opacity: 0;
+		overflow: hidden;
+		transition: all 0.6;
+	}
+	.nav--link-hidden {
+		display: none;
+	}
+	.aboutMe {
+		margin-top: 15rem;
+	}
+	.aboutMe--summary {
+		width: 90%;
+	}
+	.aboutMe--summary h1 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	.aboutMe--summary p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	.socialMedia {
+		flex-direction: row;
+		top: 90%;
+		left: 0px;
+		height: fit-content;
+		border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+		z-index: 100;
+		width: 100vw;
+		gap: 0.5rem;
+	}
+	.socialMedia > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.socialMedia > div > a {
+		padding: 0.25rem;
+		transition: all 0.3s ease-in-out;
+		border-radius: 1.25rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3rem;
+		height: 3rem;
+	}
+	.socialMedia > div img {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		width: 3rem;
+		height: 3rem;
+	}
+	.socialMedia > div a:hover {
+		transform: scale(1.1);
+	}
+	.biography {
+		flex-direction: column;
+		padding: 0rem 2rem;
+		text-align: justify;
+	}
+	.biography--text {
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.Schools {
+		padding: 0rem 2rem;
+	}
+	.skills {
+		width: 100%;
+	}
+	.Skills {
+		padding: 3rem 0.5rem 0rem 0.5rem;
+		grid-template-columns: 6.25rem 6.25rem 6.25rem;
+		grid-template-rows: 5rem auto 5rem;
+		column-gap: 0.75rem;
+		row-gap: 1rem;
+	}
+	.Skills--item img {
+		justify-content: center;
+		align-items: center;
+		width: 5rem;
+		height: 5rem;
+	}
+	.Projects {
+		padding: 0rem 2rem;
+	}
+	.Projects h1 {
+		font-family: "Lobster";
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	.Projects h2 {
+		font-size: 1.2rem;
+		margin-bottom: 3rem;
+	}
+	.project--description {
+		align-items: center;
+		flex-direction: column;
+	}
+	.project--image {
+		width: 100%;
+	}
+	.project--content {
+		width: 100%;
+	}
+	.project--content h4 {
+		text-align: center;
+	}
+	.project--content p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		text-align: justify;
+		margin-bottom: 0.75rem;
+	}
+	.project--buttons {
+		flex-direction: column;
+	}
+	.contenedorContacto {
+		width: 90vw;
+		text-align: center;
+	}
+	.contenedorItemC input {
+		width: 90vw;
+	}
+	.contenedorItemC textarea {
+		width: 90vw;
+	}
+
+	.boton {
+		width: 90vw;
+	}
 }

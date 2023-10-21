@@ -13,7 +13,32 @@ const createNewProject = (
 	const card = document.createElement("div");
 	card.classList.add("project");
 	const content = `
-	<div class="project--image">
+<div>
+	<h3>${title}</h3>
+</div>
+<div class="project--description">
+<div class="project--content">
+			<h4>${subtitle}</h4>
+			<p>
+				${description}
+			</p>
+			<p>
+			<strong>Made using: ${tech}</strong>
+			</p>
+			<div class="project--buttons">
+				<a href="${repo}" target="_blank">
+					<button class="button button--repository">
+						Repo
+					</button>
+				</a>
+				<a href="${link}" target="_blank">
+					<button class="button button--link">
+						${title}
+					</button>
+				</a>
+			</div>
+	</div>
+		<div class="project--image">
 		<a href="${video}" target="_blank">
 			<img
 				src="${img}"
@@ -21,29 +46,8 @@ const createNewProject = (
 				alt="${title}"
 			/>
 		</a>
-	</div>
-    <div class="project--content">
-		<h2>${title}</h2>
-		<h4>${subtitle}</h4>
-		<p>
-			${description}
-		</p>
-		<p>
-		<strong>Made using: ${tech}</strong>
-		</p>
-		<div class="project--buttons">
-		<a href="${repo}" target="_blank">
-		<button class="button button--repository">
-					Repo
-					</button>
-				</a>
-				<a href="${link}" target="_blank">
-				<button class="button button--link">
-					${title}
-					</button>
-				</a>
 		</div>
-	</div>
+</div>
 	
   `;
 	card.innerHTML = content;

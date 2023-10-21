@@ -15,7 +15,7 @@ fetch("../info.json")
 	.then((res) => res.json())
 	.then((data) => {
 		const skills = data.skills;
-		console.log(skills);
+
 		skills.forEach((skill) => {
 			const newSkill = createNewSkill(skill.img, skill.title);
 			container.appendChild(newSkill);

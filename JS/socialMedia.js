@@ -15,7 +15,6 @@ const createNewSocial = (name, logo, link) => {
 fetch("../info.json")
 	.then((res) => res.json())
 	.then((data) => {
-		console.log(data.social);
 		const socials = data.social;
 		socials.forEach((social) => {
 			const newSocial = createNewSocial(social.name, social.logo, social.link);
