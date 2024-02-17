@@ -1,0 +1,35 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portafolio de proyectos y desarrollo como desarrollador de Miller Arias",
+	"main": "JS/app.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Miller1999/Portafolio.git"
+	},
+	"keywords": [
+		"portfolio",
+		"portafolio",
+		"projects",
+		"developer",
+		"Miller",
+		"Arias"
+	],
+	"author": "Miller Arias",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Miller1999/Portafolio/issues"
+	},
+	"homepage": "https://github.com/Miller1999/Portafolio#readme",
+	"devDependencies": {
+		"vite": "^5.1.2"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	}
+}
