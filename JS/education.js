@@ -1,19 +1,28 @@
 const containerF = document.querySelector(".Schools");
 
 const createNewEducation = (logo, title, date, institution) => {
-	const card = document.createElement("div");
+	const card = document.createElement("article");
 	card.classList.add("Schools--item");
-	const content = `
-    <div class="Schools--item-front">
-		<img loading="lazy" src="${logo}" alt="${institution}" />
-	</div>
-	<div class="Schools--item-back">
-		<h3>${title}</h3>
-		<p>${institution}</p>
-		<p>${date}</p>
-	</div>
-  `;
-	card.innerHTML = content;
+	const front = document.createElement("div");
+	front.classList.add("Schools--item-front");
+	const logoInstitution = document.createElement("img");
+	logoInstitution.loading = "lazy";
+	logoInstitution.src = logo;
+	logoInstitution.alt = institution;
+	const back = document.createElement("div");
+	back.classList.add("Schools--item-back");
+	const backTitle = document.createElement("h3");
+	backTitle.textContent = title;
+	const backInstitution = document.createElement("p");
+	backInstitution.textContent = institution;
+	const backDate = document.createElement("p");
+	backDate.textContent = date;
+	back.appendChild(backTitle);
+	back.appendChild(backInstitution);
+	back.appendChild(backDate);
+	front.appendChild(logoInstitution);
+	card.appendChild(front);
+	card.appendChild(back);
 	return card;
 };
 
