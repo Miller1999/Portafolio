@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>About</title>
+		<link rel="icon" href="../assets/Header/Icono.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../style.sass" />
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+		<meta
+			name="description"
+			content="Portafolio de proyectos de Miller Arias"
+		/>
 	</head>
 	<body>
-		Hola about
+		<header>
+			<div class="logo">
+				<a href="/index.html"><img src="../assets/logo.webp" alt="Logo" /></a>
+			</div>
+			<div class="buttons--container">
+				<ul>
+					<li>
+						<img
+							src="https://www.svgrepo.com/show/532889/sun.svg"
+							alt="light"
+							id="light"
+							class="hidden"
+						/>
+						<img
+							src="https://www.svgrepo.com/show/532875/moon.svg"
+							alt="light"
+							id="dark"
+							class="show"
+						/>
+					</li>
+					<li>
+						<div class="menu">
+							<div class="dot1"></div>
+							<div class="dot2"></div>
+							<div class="dot3"></div>
+							<div class="dot4"></div>
+							<div class="dot5"></div>
+							<div class="dot6"></div>
+							<div class="dot7"></div>
+							<div class="dot8"></div>
+							<div class="dot9"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="about">
+			<div class="profile--image">
+				<img
+					src="https://avatars.githubusercontent.com/u/22383830?s=400&u=83ad172dcd5d67bbf9ef6d3dfa7eb722c34c67d1&v=4"
+					alt=""
+				/>
+			</div>
+			<div class="biography--text">
+				<h1>About Me</h1>
+				<p>
+					I'm Miller Arias, a <strong>FrontEnd developer</strong> from Colombia
+					with a passion for technology.
+				</p>
+
+				<p>
+					My journey started in Electronic Engineering, but my love for
+					programming led me to graduate as a FrontEnd and Fullstack Developer
+					with JavaScript.
+				</p>
+
+				<p>
+					My portfolio reflects my creativity and technical skills. Besides
+					technology, I enjoy video games, reading and nature. My philosophy is
+					constant improvement and the desire to share knowledge.
+				</p>
+
+				<p>
+					In the future, I look forward to creating innovative projects and
+					founding my own game studio, while continuing to learn and grow. My
+					journey reflects determination and passion for technology.
+				</p>
+			</div>
+			<div id="skills" class="skills">
+				<h2>Skills</h2>
+				<div class="skills--sections">
+					<div class="Skills"></div>
+				</div>
+			</div>
+			<section class="menu__deployed hidden">
+				<ol>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/pages/about.html">About</a></li>
+					<li><a href="/pages/work.html">Work</a></li>
+					<li><a href="/pages/education.html">Education</a></li>
+					<li><a href="/pages/contact.html">Contact</a></li>
+				</ol>
+				<ul>
+					<li><a href="">Github</a></li>
+					<li><a href="">Linkedin</a></li>
+					<li><a href="">X</a></li>
+					<li><a href="">Mail</a></li>
+					<li><a href="">Whatsapp</a></li>
+					<li><a href="">Resume</a></li>
+				</ul>
+			</section>
+		</main>
+		<script src="../JS/app.js"></script>
 	</body>
 </html>

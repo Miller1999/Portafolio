@@ -1,1 +1,74 @@
+@import url("./node_modules/normalize.css/normalize.css")
 
+// Fonts
+$title: "Playfair Display"
+$body: "Quattrocento"
+@mixin main()
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 2rem
+
+*
+  box-sizing: content-box
+  font-family: $body, serif
+body
+  height: 100vh
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo
+    width: 100px
+    height: 100px
+    img
+      width: 100%
+  .buttons--container
+    padding: 1rem
+    display: flex
+    ul
+      display: flex
+      list-style: none
+      align-items: center
+      height: 25px
+      gap: 1rem
+      li
+        height: 100%
+        width: 25px
+        position: relative
+        img
+          position: absolute
+          height: 100%
+          width: 25px
+          transition: all .3s
+
+        .menu
+          display: grid
+          height: 100%
+          grid-template-columns: 1fr 1fr 1fr
+          gap: 2px
+          @for $i from 1 through 9
+            div:nth-child(n)
+              width: 5px
+              height: 5px
+              border: 1px black solid
+              border-radius: 50%
+
+.home--container
+  @include main()
+  height: calc(100vh - (100px + 4rem))
+  text-align: center
+
+.about
+  @include main()
+  .profile--image
+    img
+      width: 100%
+
+.projects
+  @include main()
+
+.hidden
+  display: none
+  opacity: 0
